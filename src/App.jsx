@@ -5,8 +5,8 @@ import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import Layout from "./components/Layout/Layout";
 import Services from "./components/Services/Services";
-import AboutUs from "./components/AboutUS/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 
 
