@@ -1,7 +1,7 @@
 export default function TopBar() {
   return (
     <>
-      <section className=" top-bar bg-black py-2 px-md-5 px-0 ">
+      <section className=" top-bar bg-black py-2 px-md-5 px-0  ">
         <div className="container-fluid">
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
