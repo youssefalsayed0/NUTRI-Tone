@@ -16,5 +16,11 @@
         font-size: 2rem;
         font-weight: 600;
       }
- 
+      .landing {
+        padding: --main-padding;
+      }
+      .landing .image {
+        display: none;
+      }
+
 }

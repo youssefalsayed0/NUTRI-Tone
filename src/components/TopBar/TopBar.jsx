@@ -9,10 +9,10 @@ export default function TopBar() {
                 <div className="d-flex align-items-center">
                   <i className="fa-regular fa-envelope me-2 "></i>
                   <a
-                    href="mailto:com.gmail@official.nutritone"
+                    href="mailto:official.nutritone@gmail.com"
                     className="me-5 pe-5 border-1 border-end"
                   >
-                    com.gmail@official.nutritone
+                   official.nutritone@gmail.com
                   </a>
                 </div>
 
@@ -28,7 +28,7 @@ export default function TopBar() {
 
                 <div className="d-flex align-items-center">
                   <i className="fa-solid fa-location-dot me-2 "></i>
-                  <a href="" className="me-5">
+                  <a  className="me-5">
                     soon
                   </a>
                 </div>
