@@ -7,7 +7,7 @@ import Marquee from "../Marquee/Marquee";
 export default function LandingSection() {
   return (
   <>
- <section className=" landing bg-dark vh-100 main-p position-relative">
+ <section className=" landing bg-dark vh-100 main-p position-relative   overflow-hidden">
   <Overlay/>
   <div className="container h-100 position-relative">
     <img src={icon} alt="icon"  className="position-absolute icon "/>

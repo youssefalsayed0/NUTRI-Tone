@@ -30,7 +30,7 @@ body {
   background-color: black;
   font-family: "platia", sans-serif;
   color: white;
-  overflow-x: hidden;
+
 }
 
 h1,
@@ -286,7 +286,7 @@ nav.nav-style {
 
  .mar2{
   --marquee--direction: 1;
-  transform: rotate(7deg);
+  transform: rotate(9deg);
   background-color: #353535;
   color: rgb(107, 107, 107);
   width: 110%;
@@ -356,11 +356,9 @@ nav.nav-style {
 
 .marquees {
   align-content: center;
-  height: 100%;
   display: flex;
   flex-direction: column;
-
- 
+  margin-top: -50px;
 }
 
 
