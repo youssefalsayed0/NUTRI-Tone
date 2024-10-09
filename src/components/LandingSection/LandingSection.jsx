@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.webp"
 import icon from "../../assets/images/icon.webp"
 import Overlay from "../Overlay/Overlay";
+import Marquee from "../Marquee/Marquee";
+
 export default function LandingSection() {
   return (
   <>
@@ -20,6 +22,7 @@ export default function LandingSection() {
       </div>
     </div>
   </div>
+  <Marquee/>
 </section>
   </>
   )

@@ -55,11 +55,11 @@ export default function NavBar() {
       const toggle = toggleRef.current;
 
       if (window.scrollY > 50) {
-        navbar.classList.add( "nav-style"  );
+        navbar.classList.add( "nav-style" , );
   
       }
       else if (window.scrollY == 0){
-        navbar.classList.remove("nav-style" );
+        navbar.classList.remove("nav-style" ,);
        
       }
     };
