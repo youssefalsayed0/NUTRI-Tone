@@ -16,8 +16,8 @@
 }
 
 :root {
-  --main-padding: 60px 0;
-  --main-color: #eefb13;
+  --main-padding: 120px 0;
+  --main-color: #f0fb29;
   --secondry-color: #fbeed1;
   --main-transition: 0.3s ease-in-out;
 }
@@ -30,7 +30,6 @@ body {
   background-color: black;
   font-family: "platia", sans-serif;
   color: white;
-
 }
 
 h1,
@@ -50,14 +49,45 @@ a {
 
 p {
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .main-p {
   padding: var(--main-padding);
 }
+.main-title {
+  margin-bottom: 100px;
+}
+.main-title h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translatex(-50%);
+}
+.main-title .text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards infinite,
+    filling 5s ease-in forwards infinite;
+}
+.main-title .text-line text {
+  font-size: 7em;
+}
+.main-title svg {
+  stroke: rgb(138, 138, 138);
+}
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.322);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    /* Dark at the bottom */ rgba(0, 0, 0, 0.3) 30%,
+    /* Slightly lighter moving upwards */ rgba(0, 0, 0, 0.4) 50%,
+    /* Fully transparent in the middle */ rgba(0, 0, 0, 0.3) 70%,
+    /* Slightly darker moving upwards */ rgba(0, 0, 0, 0.8) 100%
+      /* Dark again at the top */
+  );
 }
 
 .top-bar a {
@@ -71,15 +101,16 @@ nav {
   border-color: #ffffff33;
   z-index: 10 !important;
   margin-top: 40px;
+  transition: var(--main-transition);
 }
 
 nav .nav-link {
   position: relative;
   display: inline-block;
-  transition: color 0.3s ease-in;
+  transition: var(--main-transition);
 }
 nav.nav-style {
-  animation: slide-down 0.3s ease-in-out;
+  animation: slide-down var(--main-transition);
   margin-top: 0px;
 }
 
@@ -192,7 +223,6 @@ nav.nav-style {
   background-image: url(./assets/images//Ellipse-13.webp);
   background-position: center;
   background-size: cover;
-
 }
 
 .landing a {
@@ -265,26 +295,21 @@ nav.nav-style {
   animation: floating 3s ease-in-out infinite;
 }
 
-
-
-
-
-
 .marquee {
   --marquee--repeat-count: 12;
   --marquee--base-duration: 1s;
   --marquee--repeat-size: calc(100% / var(--marquee--repeat-count));
   --marquee--double-size: calc(var(--marquee--repeat-size) * 2);
   --marquee--duration: calc(
-  	var(--marquee--base-duration) * var(--char-count, 20)
+    var(--marquee--base-duration) * var(--char-count, 20)
   );
 
   width: 100%;
   padding: 5px 0;
-  position: relative;  
+  position: relative;
 }
 
- .mar2{
+.mar2 {
   --marquee--direction: 1;
   transform: rotate(9deg);
   background-color: #353535;
@@ -294,12 +319,11 @@ nav.nav-style {
   left: -20px;
 }
 
- .mar1{
+.mar1 {
   --marquee--direction: -1;
   background-color: var(--main-color);
   color: black;
   z-index: 2;
-
 }
 
 .marquee h4 {
@@ -310,9 +334,9 @@ nav.nav-style {
 }
 
 .marquee h4::after {
-  content: "\f44b"; 
+  content: "\f44b";
   font-family: "Font Awesome 6 Free";
-  font-weight: 900; 
+  font-weight: 900;
 }
 .marquee h4::before {
   content: "";
@@ -323,42 +347,38 @@ nav.nav-style {
   display: flex;
   text-transform: uppercase;
   border: 2px solid black;
-  padding: 10px 0; 
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .marquee--inner {
-    animation: marquee var(--marquee--duration) infinite linear, reduce-marquee var(--marquee--duration) infinite linear paused;
-    animation-composition: add;
-  }
-  .marquee--inner:hover {
-    animation-play-state: running;
-  }
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(calc( (-1 * var(--marquee--double-size)) - (var(--marquee--double-size) * var(--marquee--direction, 1)) ));
-  }
-  to {
-    transform: translateX(calc(var(--marquee--double-size) * -1));
-  }
-}
-@keyframes reduce-marquee {
-  from {
-    transform: translateX(calc(var(--marquee--repeat-size) * var(--marquee--direction, 1)));
-  }
-  to {
-    transfrom: translateX(calc(var(--marquee--double-size) * -1));
-  }
+  padding: 10px 0;
 }
 
 .marquees {
   align-content: center;
   display: flex;
   flex-direction: column;
-  margin-top: -50px;
+}
+
+.about-us-section .icon {
+  bottom: 150px;
+  left: 40%;
+  animation: floating 3s ease-in-out infinite;
 }
 
 
+.divider img{
+  position: absolute;
+  top: -250%;
+  z-index: 2;
+}
+
+.divider img.left{
+left: 0;
+}
+.divider img.right{
+right: 0;
+}
+.divider svg {
+  stroke: var(--main-color);
+
+}
+.divider .main-title .text-line text {
+  font-size: 9em;
+} 

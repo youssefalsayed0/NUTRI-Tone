@@ -154,10 +154,57 @@
 
   @keyframes slide-down {
     0% {
-      top: -100px;
+      top: -120px;
     }
     to 100% {
       top: 0;
     }
   }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(calc( (-1 * var(--marquee--double-size)) - (var(--marquee--double-size) * var(--marquee--direction, 1)) ));
+    }
+    to {
+      transform: translateX(calc(var(--marquee--double-size) * -1));
+    }
+  }
+  @keyframes reduce-marquee {
+    from {
+      transform: translateX(calc(var(--marquee--repeat-size) * var(--marquee--direction, 1)));
+    }
+    to {
+      transfrom: translateX(calc(var(--marquee--double-size) * -1));
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .marquee--inner {
+      animation: marquee var(--marquee--duration) infinite linear, reduce-marquee var(--marquee--duration) infinite linear paused;
+      animation-composition: add;
+    }
+    .marquee--inner:hover {
+      animation-play-state: running;
+    }
+  }
+
+  
+ @keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+    0%,90% {
+        fill: transparent;
+        fill-opacity: 0
+    }
+
+    100% {
+        fill: transparent;
+        fill-opacity: 1
+    }
+}
+
   /********************** end keyframes ************************/

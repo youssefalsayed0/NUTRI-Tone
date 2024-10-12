@@ -11,7 +11,14 @@
         font-size: 3rem;
         font-weight: 600;
       }
- 
+      .main-title .text-line text,
+      .divider .main-title .text-line text {
+        font-size: 5em;
+       }
+       .about-us-section .icon {
+    display: none;
+      }
+      
 }
 
 @media only screen and (max-width: 767px) {
@@ -25,5 +32,8 @@
       .landing .image {
         display: none;
       }
-
+      .main-title .text-line text,
+      .divider .main-title .text-line text {
+        font-size: 2.5em;
+       }
 }

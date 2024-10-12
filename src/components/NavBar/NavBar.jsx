@@ -210,10 +210,53 @@ export default function NavBar() {
             <div className="heading">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
               <h6 className="text-uppercase">contact us</h6>
+              <a href="tel:+201069796878"  className="d-flex align-items-center link">
+              <span className="icon">
+                  <i className="fa-solid fa-phone text-white"></i> 
+              </span>
+              <div className="box">
+                <p className="title">ssd</p>
+                <p className="data">dsds</p>
+              </div>
+              </a>
+              <a href="tel:+201069796878"  className="d-flex align-items-center link">
+              <span className="icon">
+                  <i className="fa-solid fa-phone text-white"></i> 
+              </span>
+              <div className="box">
+                <p className="title">ssd</p>
+                <p className="data">dsds</p>
+              </div>
+              </a>
+              <a href="tel:+201069796878"  className="d-flex align-items-center link">
+              <span className="icon">
+                  <i className="fa-solid fa-phone text-white"></i> 
+              </span>
+              <div className="box">
+                <p className="title">ssd</p>
+                <p className="data">dsds</p>
+              </div>
+              </a>
             </div>
             <div className="heading">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
               <h6 className="text-uppercase">stay connected</h6>
+              <div className=" d-flex text-white-50 mt-4 ms-4 ">
+              <div className="social-icons d-flex   align-items-center">
+                <a href="https://www.facebook.com/NUTRITONE1/ " target="_blank">
+                    <i className="fa-brands fa-facebook-f fa-lg me-3" />
+                </a>
+                <a href="https://www.instagram.com/nutri_tone/"  target="_blank">
+                    <i className="fa-brands fa-instagram fa-lg me-3" />
+                </a>
+               <a href="https://www.youtube.com/channel/UC-Ro9sXpKXdFjau5ww1dkRQ"  target="_blank">
+                   <i className="fa-brands fa-youtube fa-lg me-3" />
+               </a>
+           <a href="https://www.tiktok.com/@nutri.tone?lang=en_official?lang=en"  target="_blank">
+                   <i className="fa-brands fa-tiktok fa-lg " />
+           </a>
+              </div>
+            </div>
             </div>
               </div>
 

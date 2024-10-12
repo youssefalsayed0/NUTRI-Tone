@@ -1,3 +1,5 @@
+import AboutUsSection from "../AboutUsSection/AboutUsSection";
+import Divider from "../Divider/Divider";
 import LandingSection from "../LandingSection/LandingSection";
 
 import Splash from "../Splash/Splash";
@@ -5,11 +7,12 @@ import Splash from "../Splash/Splash";
 export default function Home() {
   return (
     <>
-<main>
-        <Splash />
+      <main>
+        {/* <Splash /> */}
         <LandingSection />
-   
-</main>
+        <AboutUsSection />
+        <Divider/>
+      </main>
     </>
   );
 }
