@@ -29,7 +29,7 @@ export default function Testimonials() {
     <section className="testimonials main-p overflow-hidden">
          <AnimatedTitle text={t("main-title.reviews")} title={t("main-title.reviews")}/>
       <div className="container">
-        <div className="row">
+        <div className="row gy-5">
         <div className="col-lg-6 ">
           <img src={logo} alt="logo"  className="img-fluid"/>
         </div>

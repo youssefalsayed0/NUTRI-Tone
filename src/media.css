@@ -8,6 +8,11 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .text--line {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
   .main-title .text-line text,
   .divider .main-title .text-line text {
     font-size: 5em;
@@ -33,6 +38,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .text--line {
+    font-size: 2rem;
+    font-weight: 600;
+  }
   .landing {
     padding: --main-padding;
   }
