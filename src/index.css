@@ -21,6 +21,17 @@
   --secondry-color: #fbeed1;
   --main-transition: 0.3s ease-in-out;
 }
+.mf-cursor {
+color: var(--main-color);
+opacity: 0.1;
+}
+.mf-cursor:before {
+  transform: scale(0.4);
+}
+
+.mf-cursor.-text{
+  opacity: 0.4;
+}
 
 html {
   scroll-behavior: unset !important;
@@ -362,23 +373,21 @@ nav.nav-style {
   animation: floating 3s ease-in-out infinite;
 }
 
-
-.divider img{
+.divider img {
   position: absolute;
   top: -250%;
   z-index: 2;
 }
 
-.divider img.left{
-left: 0;
+.divider img.left {
+  left: 0;
 }
-.divider img.right{
-right: 0;
+.divider img.right {
+  right: 0;
 }
 .divider svg {
   stroke: var(--main-color);
-
 }
 .divider .main-title .text-line text {
   font-size: 9em;
-} 
+}

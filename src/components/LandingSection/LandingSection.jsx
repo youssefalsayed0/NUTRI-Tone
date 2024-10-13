@@ -14,7 +14,7 @@ export default function LandingSection() {
     <div className="row h-100 align-items-center position-relative">
       <div className="col-lg-12 z-1">
       <h1 className="display-3 mb-3">NUTRI-TONE</h1>
-      <h4>MAKE DIET EASY</h4>
+      <h4 data-cursor-text="🚀" >MAKE DIET EASY</h4>
       <Link type="button" to="/contact-us" className=" rounded-0 text-uppercase position-relative mt-5">get started today</Link>
       </div>
       <div className="col-lg-10 image">
