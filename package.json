@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "bootstrap": "^5.3.3",
+    "firebase": "^10.14.1",
     "gsap": "^3.12.5",
     "i18next": "^23.15.2",
     "mouse-follower": "^1.1.2",

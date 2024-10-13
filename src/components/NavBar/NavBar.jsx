@@ -176,7 +176,7 @@ export default function NavBar() {
             <div className="image">
                 <img src={logo} alt="logo"  className="img-fluid" width={130}/>
             </ div >
-              <i className="fa-solid fa-x ms-auto text-white " type="button" data-bs-dismiss="offcanvas"
+              <i className="fa-solid fa-x ms-auto me-4 text-white " type="button" data-bs-dismiss="offcanvas"
                 aria-label="Close"></i>
             
             </div>

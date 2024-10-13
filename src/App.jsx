@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Home from "./components/Home/Home";
@@ -10,6 +9,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import 'mouse-follower/src/scss/index.scss';  // Import the MouseFollower styles
+
+
 
 // Create the router
 const router = createBrowserRouter([
@@ -28,18 +29,10 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  useEffect(() => {
-    // Register GSAP for MouseFollower
-    MouseFollower.registerGSAP(gsap);
-
-    // Initialize the MouseFollower instance
-    const cursor = new MouseFollower();
-
-    return () => {
-      // Cleanup on component unmount to avoid memory leaks
-      cursor.destroy();
-    };
-  }, []); // Empty dependency array to run the effect once
+  MouseFollower.registerGSAP(gsap);
+  const cursor = new MouseFollower({
+    speed: 0.33,
+});
 
   return (
     <>

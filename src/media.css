@@ -1,39 +1,47 @@
 @media only screen and (max-width: 1199px) {
   .top-bar {
-    display: none;}
-   nav{
+    display: none;
+  }
+  nav {
     margin-top: 0;
-   };
-} 
+  }
+}
 
 @media only screen and (max-width: 991px) {
-    .text--line {
-        font-size: 3rem;
-        font-weight: 600;
-      }
-      .main-title .text-line text,
-      .divider .main-title .text-line text {
-        font-size: 5em;
-       }
-       .about-us-section .icon {
+  .main-title .text-line text,
+  .divider .main-title .text-line text {
+    font-size: 5em;
+  }
+  .about-us-section .icon {
     display: none;
-      }
-      
+  }
+  .mf-cursor {
+    display: none;
+  }
+  .team-section .member {
+    position: absolute;
+    bottom: 36.5px;
+    transform: translateX(-50%) scaleY(1);
+    left: 50%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(11.09843px);
+    padding: 18px 0 13px 27px;
+    transition: all .3s cubic-bezier(.3,.3,0,.8);
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
-    .text--line {
-        font-size: 2rem;
-        font-weight: 600;
-      }
-      .landing {
-        padding: --main-padding;
-      }
-      .landing .image {
-        display: none;
-      }
-      .main-title .text-line text,
-      .divider .main-title .text-line text {
-        font-size: 2.5em;
-       }
+  .landing {
+    padding: --main-padding;
+  }
+  .landing .image {
+    display: none;
+  }
+  .main-title .text-line text,
+  .divider .main-title .text-line text {
+    font-size: 2.5em;
+  }
 }
+ 

@@ -22,14 +22,14 @@
   --main-transition: 0.3s ease-in-out;
 }
 .mf-cursor {
-color: var(--main-color);
-opacity: 0.1;
+  color: var(--main-color);
+  opacity: 0.1;
 }
 .mf-cursor:before {
   transform: scale(0.4);
 }
 
-.mf-cursor.-text{
+.mf-cursor.-text {
   opacity: 0.4;
 }
 
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #110e10;
   font-family: "platia", sans-serif;
   color: white;
 }
@@ -390,4 +390,81 @@ nav.nav-style {
 }
 .divider .main-title .text-line text {
   font-size: 9em;
+}
+
+.team-section .row > div {
+  border: 1px solid rgb(70, 70, 70);
+}
+.team-section .box {
+  background-color: #222222;
+}
+.team-section .box {
+  background-color: #222222;
+  position: relative;
+  z-index: 3;
+}
+
+.team-section .member {
+  position: absolute;
+  bottom: 36.5px;
+  transform: translateX(-50%) scaleY(0);
+  left: 50%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(11.09843px);
+  padding-top: 18px;
+  padding-right: 0;
+  padding-bottom: 13px;
+  padding-left: 27px;
+  transition: all 0.3s cubic-bezier(0.3, 0.3, 0, 0.8);
+}
+.team-section h6:first-child {
+  color: var(--main-color);
+}
+.team-section .box:hover .member {
+  transform: translateX(-50%) scaleY(1);
+}
+.team-section .member::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+}
+
+
+.testimonials .stars i {
+  color: yellow;
+  margin: 0 2px;
+}
+.testimonials .review{
+height: 200px;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.7;
+overflow-y: auto;
+}
+
+/* Scrollbar width */
+.testimonials .review::-webkit-scrollbar {
+  width: 5px; /* Change width of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+.testimonials .review::-webkit-scrollbar-track {
+  background: transparent; /* Light background */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.testimonials .review::-webkit-scrollbar-thumb {
+  background: #888; /* Darker color for the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+.carousel-control-prev,
+.carousel-control-next
+{
+  position: unset;
+
 }
