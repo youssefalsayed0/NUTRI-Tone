@@ -1,26 +1,138 @@
 {
+  "main-title": {
+    "about": "about us",
+    "services": "",
+    "team": "our team",
+    "reviews": "reviews",
+    "packages": {
+      "title": "packages",
+      "desc": "CHOOSE Package THAT SUITS YOU"
+    },
+    "footer" : "LIFE EASY"
+  },
 
-    "main-title" : {
-        "about" : "about us" ,
-        "services" : "" ,
-        "team" : "our team" ,
-        "reviews" : "reviews" 
+  "about-us-section": {
+    "title": "The PERFECT PLACE FOR YOUR FITNESS GOAL",
+    "desc1": "We are a system specialized in nutrition in its various sections, including obesity, thinness, therapeutic nutrition, nutrition for pregnant and lactating women, children's nutrition, and nutrition for athletes, in addition to our important role in physical therapy. Our beginnings were in 2022. During this period until now, we have carried out many follow-ups and natural transfers, including a free initiative for only twenty people in 2023.",
+    "desc2": "We held a competition among them for the most committed for a continuous month, and thanks to it, we succeeded in creating distinguished results, the most prominent of which is our champion who won first place in this initiative (M.A.), where the role of nutrition played a radical role with her in her medical examinations. This and other champions of ours who are committed to improving their physical and mental health. We hope that you will be one of them."
+  },
+
+  "coach": {
+    "name1": "DR.mohamed mahmoud hassan",
+    "job1": "physiotherapist & certified nutritionist",
+    "name2": "DR.mohamed lhaled gamal ",
+    "job2": "physiotherapist & certified nutritionist",
+    "name3": "dr.ahmed ali mansour",
+    "job3": "physiotherapist & certified nutritionist"
+  },
+
+  "plans": {
+
+    "button1" : "GET Package",
+    "button2" : "KNOW MORE",
+
+    "obesity": {
+        "title": "OBESITY $ underweight",
+      "golden": {
+        "title": "golden package",
+        "price": "499 EGB/",
+        "offer": "Special offer 3 months 1250 instead of 1500",
+        "features" :{
+            "f1" : "Special diet" ,
+            "f2" : "Special training system",
+            "f3" : "Plan supplements as desired",
+            "f4" : "24 hour follow up"
+        }
+      },
+      "silver": {
+        "title": "silver package",
+        "price": "399 EGB/",
+        "offer": "Special offer 3 months 999 instead of 1200",
+        "features" :{
+            "f1" : "Special diet" ,
+            "f2" : "Special training system",
+            "f3" : " 24 hour follow up for those who want a diet only"
+        }
+      }
+
+
     },
 
-    "about-us-section":{
-        "title" : "The PERFECT PLACE FOR YOUR FITNESS GOAL",
-        "desc1":"We are a system specialized in nutrition in its various sections, including obesity, thinness, therapeutic nutrition, nutrition for pregnant and lactating women, children's nutrition, and nutrition for athletes, in addition to our important role in physical therapy. Our beginnings were in 2022. During this period until now, we have carried out many follow-ups and natural transfers, including a free initiative for only twenty people in 2023.",
-        "desc2":"We held a competition among them for the most committed for a continuous month, and thanks to it, we succeeded in creating distinguished results, the most prominent of which is our champion who won first place in this initiative (M.A.), where the role of nutrition played a radical role with her in her medical examinations. This and other champions of ours who are committed to improving their physical and mental health. We hope that you will be one of them."
+    "clinical": {
+        "title": "clinical nutrition",
+        "price": "499 EGP/",
+        "offer1": "Special offer 3 months 1250 instead of 1500",
+        "offer2": "Special offer 6 months 2500 instead of 3000",
+        "features" :{
+            "f1" : "24 hour follow up" ,
+            "f2" : "Nutrition for diabetics",
+            "f3" : "Nutrition for hypertensive patients",
+            "f4" : "Nutrition for thyroid patients",
+            "f5" : "Nutrition for liver patients",
+            "f6" : "Nutrition for kidney patients",
+            "f7" : "Nutrition for heart patients"
+        }
     },
-    "coach" :{
-        "name1" : "DR.mohamed mahmoud hassan",
-        "job1" : "physiotherapist & certified nutritionist",
-        "name2" : "DR.mohamed lhaled gamal ",
-        "job2" : "physiotherapist & certified nutritionist",
-        "name3" : "dr.ahmed ali mansour",
-        "job3" : "physiotherapist & certified nutritionist"
+
+
+    "kids": {
+        "title": "kids nutrition",
+        "price": "499 EGP / ",
+        "offer1": "Special offer 3 months 1250 instead of 1500",
+        "offer2": "Special offer 6 months 2500 instead of 3000",
+        "features" :{
+            "f1" : "A special diet for your child",
+            "f2" : "24 hour follow up" ,
+            "f3" : "A special recipe book to make the diet popular for your child",
+            "f4" : "An activity and coloring book to make the child accept the diet, pay attention to nutritional elements, and know what is beneficial and harmful to his health A special recipe book to make the diet popular for your child",
+            "f5" : "If the child is an athlete, we will help him with diet to achieve championships in the sports he plays"
+        }
+    },
+ 
+    
+    "pregnant": {
+        "title": "pregnant & lactation nutrition",
+        "price": "499 EGP/",
+        "offer1": "Special offer 6 months 2500 instead of 3000",
+        "offer2": "Special offer 9 months 4000 instead of 4500",
+        "features" :{
+            "f1" : "Special diet for you" ,
+            "f2" : "A special exercise system for you",
+            "f3" : "24 hour follow up",
+            "f4" : "NutriChef Recipe Book"
+        }
+    },
+
+
+    "sports": {
+        "title": "sports nutrition",
+        "price": "599 EGP/",
+        "offer1": "Special offer 3 months 1500 instead of 1800",
+        "offer2": "Special offer 6 months 3000 instead of 3600",
+        "features" :{
+            "f1" : "A special diet that takes into account all aspects of you as an athlete" ,
+            "f2" : "24 hour follow up",
+            "f3" : "Plan supplements as desired",
+            "f4" : "NutriChef Recipe Book",
+            "f5" : "Nutri-tone Book Set"
+        }
+    },
+
+
+    "family": {
+        "title": "family care",
+        "price": "499 EGP/",
+        "offer1": "Special offer 3 months 4000 instead of 4500",
+        "offer2": "Special offer 6 months 8000 instead of 9000",
+        "features" :{
+            "f1" : "All Nutritone packages are now with you and your family. Subscribe for you and them and take care of their health." ,
+            "f2" : "24 hour follow up"
+        
+        }
     }
 
-    
+
+  }
+
   
 }

@@ -64,6 +64,13 @@ p {
   font-weight: 500;
 }
 
+li {
+  font-family: "Montserrat", sans-serif;
+}
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
 .main-p {
   padding: var(--main-padding);
 }
@@ -236,7 +243,7 @@ nav.nav-style {
   background-size: cover;
 }
 
-.landing a {
+.main-btn  {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   z-index: 1;
@@ -248,7 +255,7 @@ nav.nav-style {
   transition: var(--main-transition);
 }
 
-.landing a::before {
+.main-btn::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -261,7 +268,7 @@ nav.nav-style {
   background-color: #eefb13;
 }
 
-.landing a::after {
+.main-btn::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -273,13 +280,13 @@ nav.nav-style {
   transition: var(--main-transition);
   background-color: #eefb13;
 }
-.landing a:hover::before {
+.main-btn:hover::before {
   right: 0;
 }
-.landing a:hover::after {
+.main-btn:hover::after {
   left: 0;
 }
-.landing a:hover {
+.main-btn:hover {
   color: black !important;
 }
 .landing .image {
@@ -466,5 +473,42 @@ overflow-y: auto;
 .carousel-control-next
 {
   position: unset;
+}
 
+.plans .package-card {
+  border: 1px solid rgb(87, 87, 87);
+  transition: var(--main-transition);
+}
+.plans .package-card:hover {
+ background-color: #272525;
+}
+.plans .offers ul li {
+color: var(--main-color) ;
+}
+
+footer .icon {
+bottom: 0;
+z-index: -1;
+}
+
+footer .main-title {
+  margin: 0;
+}
+footer .main-title h1 {
+margin: 0;
+padding: 0;
+}
+footer .main-title .text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards infinite,
+    filling 5s ease-in forwards infinite;
+}
+footer .main-title .text-line text {
+  font-size: 2.5em;
+transform: translate(-16% , -30%);
+}
+footer .main-title svg {
+  stroke: var(--main-color);
+  opacity: 1;
 }

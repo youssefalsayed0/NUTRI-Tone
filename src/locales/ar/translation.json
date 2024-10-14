@@ -1,1 +1,114 @@
-{}
+{
+
+
+    "plans": {
+
+        "button 1 " : "GET Package",
+        "button 2 " : "KNOW MORE",
+    
+        "obesity": {
+            "title": "OBESITY $ underweight",
+          "golden": {
+            "title": "",
+            "price": "",
+            "offer": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : ""
+            }
+          },
+          "silver": {
+            "title": "",
+            "price": "",
+            "offer": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : ""
+            }
+          }
+    
+    
+        },
+    
+        "clinical": {
+            "title": "clinical nutrition",
+            "price": "499 EGP / month",
+            "offer1": "",
+            "offer2": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : "",
+                "f5" : "",
+                "f6" : "",
+                "f7" : ""
+            }
+        },
+    
+    
+        "kids": {
+            "title": "kids nutrition",
+            "price": "499 EGP / month",
+            "offer1": "",
+            "offer2": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : "",
+                "f5" : ""
+            }
+        },
+     
+        
+        "pregnant": {
+            "title": "pregnant & lactation nutrition",
+            "price": "499 EGP / month",
+            "offer1": "",
+            "offer2": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : ""
+            }
+        },
+    
+    
+        
+        "sports": {
+            "title": "sports nutrition",
+            "price": "499 EGP / month",
+            "offer1": "",
+            "offer2": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : "",
+                "f3" : "",
+                "f4" : "",
+                "f5" : ""
+            }
+        },
+    
+    
+        "family": {
+            "title": "family care",
+            "price": "499 EGP / month",
+            "offer1": "",
+            "offer2": "",
+            "features" :{
+                "f1" : "" ,
+                "f2" : ""
+            
+            }
+        }
+    
+    
+    
+      }
+}

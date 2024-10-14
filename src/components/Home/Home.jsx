@@ -1,6 +1,7 @@
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
 import Divider from "../Divider/Divider";
 import LandingSection from "../LandingSection/LandingSection";
+import Plans from "../Plans/Plans";
 
 import Splash from "../Splash/Splash";
 import TeamSection from "../TeamSection/TeamSection";
@@ -16,6 +17,7 @@ export default function Home() {
         <Divider/>
         <TeamSection/>
         <Testimonials/>
+        <Plans/>
       </main>
     </>
   );
