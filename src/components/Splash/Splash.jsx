@@ -1,4 +1,22 @@
+import { useEffect } from "react";
+
 export default function Splash() {
+  useEffect(() => {
+    // Disable scrolling when splash screen is active
+    document.body.style.overflow = "hidden";
+
+    // Enable scrolling after 3 seconds (duration of your splash animation)
+    const timer = setTimeout(() => {
+      document.body.style.overflow = "auto";
+    }, 3000); // Adjust this timing to match your animation duration
+
+    return () => {
+      // Clean up: make sure scrolling is enabled when the component unmounts
+      document.body.style.overflow = "auto";
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
     <>
       <div className="splash d-flex align-items-center justify-content-center text-white">

@@ -9,6 +9,9 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import 'mouse-follower/src/scss/index.scss';  // Import the MouseFollower styles
+import Terms from "./components/Terms/Terms";
+import Refund from "./components/Refund/Refund";
+import Privacy from "./components/Privacy/Privacy";
 
 
 
@@ -23,6 +26,9 @@ const router = createBrowserRouter([
       { path: "about-us", element: <AboutUs /> },
       { path: "services", element: <Services /> },
       { path: "contact-us", element: <ContactUs /> },
+      { path: "terms-&-conditions", element: <Terms /> },
+      { path: "refund-&-policy", element: <Refund /> },
+      { path: "privacy-policy", element: <Privacy /> },
       { path: "*", element: <NotFound /> },
     ],
   },

@@ -21,6 +21,30 @@
   --secondry-color: #fbeed1;
   --main-transition: 0.3s ease-in-out;
 }
+
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #303030; /* Light grey background */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* Use your primary color */
+  border-radius: 10px;
+  /* Match the track's background */
+}
+
+/* On hover, increase the contrast */
+::-webkit-scrollbar-thumb:hover {
+  background-color:rgb(255, 255, 255); /* Another accent color */
+}
+
 .mf-cursor {
   color: var(--main-color);
   opacity: 0.1;
@@ -193,6 +217,36 @@ nav.nav-style {
   animation: ease 0.6s menu-icon-bottom forwards;
 }
 
+nav .link {
+  margin-top: 30px;
+  align-items: center;
+}
+
+nav .link .icon {
+  width: 70px;
+  height: 70px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+nav .link .icon i{
+  color: var(--main-color) !important;
+}
+nav .link  .title {
+  margin: 0;
+  padding: 0;
+  font-size: 18;
+  font-weight: bold;
+
+}
+nav .link .data {
+  margin: 0;
+  padding: 0;
+  color: #6d6d6d;
+}
+
 .splash {
   background-color: rgb(37, 37, 37);
   animation: splash 2.2s 2s cubic-bezier(0.88, -0.01, 0.07, 1.01) forwards;
@@ -289,23 +343,7 @@ nav.nav-style {
 .main-btn:hover {
   color: black !important;
 }
-.landing .image {
-  position: absolute;
-  right: -20%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.landing .image::after {
-  position: absolute;
-  content: "";
-  width: 45%;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid var(--main-color);
-  z-index: 0;
-}
+
 .landing .icon {
   bottom: 150px;
   left: 50%;
@@ -376,7 +414,7 @@ nav.nav-style {
 
 .about-us-section .icon {
   bottom: 150px;
-  left: 40%;
+  left: 45%;
   animation: floating 3s ease-in-out infinite;
 }
 
@@ -486,6 +524,9 @@ overflow-y: auto;
 color: var(--main-color) ;
 }
 
+
+
+
 footer .icon {
 bottom: 0;
 z-index: -1;
@@ -511,4 +552,68 @@ transform: translate(-16% , -30%);
 footer .main-title svg {
   stroke: var(--main-color);
   opacity: 1;
+}
+
+footer .second {
+  border-left: 1px solid #414141;
+  border-right: 1px solid #414141 ; 
+}
+footer .second .contact p {
+ color: var(--main-color);
+}
+footer .second  .title {
+ color: var(--main-color);
+}
+footer .copy {
+  border-top: 1px solid #414141;
+}
+
+
+.box-border {
+  color: white;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0) 5%,
+      rgb(0, 0, 0) 60%,
+      rgb(0, 0, 0) 95%
+    );
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, var(--main-color), rgb(46, 46, 46) 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 5s linear infinite;
+          animation: bg-spin 5s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.box-border p {
+  font-size: 19px;
+  line-height: 1.8;
+color: #aaaaaa;
+}
+.box-border h4{
+color: var(--main-color);
+}
+.banner {
+  padding: 150px 0;
+  background-position: center;
+  background-size: cover;
 }

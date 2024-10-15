@@ -12,9 +12,9 @@ export default function AboutUsSection() {
         <img src={icon} alt="icon"  className="position-absolute icon"/>
       <AnimatedTitle text={t("main-title.about")} title={t("main-title.about")}/>
         <div className="container">
-          <div className="row gy-5 align-items-center">
+          <div className="row gy-5 align-items-center ">
             <div className="col-lg-6">
-              <div className="image " data-aos="fade-right">
+              <div className="image p-5" data-aos="fade-right">
                 <img src={logo} alt="factory" className="img-fluid rounded-3" loading="lazy"/>
               </div>
             </div>

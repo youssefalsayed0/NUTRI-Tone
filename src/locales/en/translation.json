@@ -8,7 +8,16 @@
       "title": "packages",
       "desc": "CHOOSE Package THAT SUITS YOU"
     },
-    "footer" : "LIFE EASY"
+    "footer": "LIFE EASY"
+  },
+  "banner": {
+    "home": "home",
+    "about": "about-us",
+    "services": "services",
+    "contact-us": "contact-us",
+    "terms": "terms & conditions",
+    "refund": "refund & policy",
+    "privacy": "privacy policy"
   },
 
   "about-us-section": {
@@ -27,112 +36,215 @@
   },
 
   "plans": {
-
-    "button1" : "GET Package",
-    "button2" : "KNOW MORE",
+    "button1": "GET Package",
+    "button2": "KNOW MORE",
 
     "obesity": {
-        "title": "OBESITY $ underweight",
+      "title": "OBESITY $ underweight",
       "golden": {
         "title": "golden package",
         "price": "499 EGB/",
         "offer": "Special offer 3 months 1250 instead of 1500",
-        "features" :{
-            "f1" : "Special diet" ,
-            "f2" : "Special training system",
-            "f3" : "Plan supplements as desired",
-            "f4" : "24 hour follow up"
+        "features": {
+          "f1": "Special diet",
+          "f2": "Special training system",
+          "f3": "Plan supplements as desired",
+          "f4": "24 hour follow up"
         }
       },
       "silver": {
         "title": "silver package",
         "price": "399 EGB/",
         "offer": "Special offer 3 months 999 instead of 1200",
-        "features" :{
-            "f1" : "Special diet" ,
-            "f2" : "Special training system",
-            "f3" : " 24 hour follow up for those who want a diet only"
+        "features": {
+          "f1": "Special diet",
+          "f2": "Special training system",
+          "f3": " 24 hour follow up for those who want a diet only"
         }
       }
-
-
     },
 
     "clinical": {
-        "title": "clinical nutrition",
-        "price": "499 EGP/",
-        "offer1": "Special offer 3 months 1250 instead of 1500",
-        "offer2": "Special offer 6 months 2500 instead of 3000",
-        "features" :{
-            "f1" : "24 hour follow up" ,
-            "f2" : "Nutrition for diabetics",
-            "f3" : "Nutrition for hypertensive patients",
-            "f4" : "Nutrition for thyroid patients",
-            "f5" : "Nutrition for liver patients",
-            "f6" : "Nutrition for kidney patients",
-            "f7" : "Nutrition for heart patients"
-        }
+      "title": "clinical nutrition",
+      "price": "499 EGP/",
+      "offer1": "Special offer 3 months 1250 instead of 1500",
+      "offer2": "Special offer 6 months 2500 instead of 3000",
+      "features": {
+        "f1": "24 hour follow up",
+        "f2": "Nutrition for diabetics",
+        "f3": "Nutrition for hypertensive patients",
+        "f4": "Nutrition for thyroid patients",
+        "f5": "Nutrition for liver patients",
+        "f6": "Nutrition for kidney patients",
+        "f7": "Nutrition for heart patients"
+      }
     },
-
 
     "kids": {
-        "title": "kids nutrition",
-        "price": "499 EGP / ",
-        "offer1": "Special offer 3 months 1250 instead of 1500",
-        "offer2": "Special offer 6 months 2500 instead of 3000",
-        "features" :{
-            "f1" : "A special diet for your child",
-            "f2" : "24 hour follow up" ,
-            "f3" : "A special recipe book to make the diet popular for your child",
-            "f4" : "An activity and coloring book to make the child accept the diet, pay attention to nutritional elements, and know what is beneficial and harmful to his health A special recipe book to make the diet popular for your child",
-            "f5" : "If the child is an athlete, we will help him with diet to achieve championships in the sports he plays"
-        }
-    },
- 
-    
-    "pregnant": {
-        "title": "pregnant & lactation nutrition",
-        "price": "499 EGP/",
-        "offer1": "Special offer 6 months 2500 instead of 3000",
-        "offer2": "Special offer 9 months 4000 instead of 4500",
-        "features" :{
-            "f1" : "Special diet for you" ,
-            "f2" : "A special exercise system for you",
-            "f3" : "24 hour follow up",
-            "f4" : "NutriChef Recipe Book"
-        }
+      "title": "kids nutrition",
+      "price": "499 EGP / ",
+      "offer1": "Special offer 3 months 1250 instead of 1500",
+      "offer2": "Special offer 6 months 2500 instead of 3000",
+      "features": {
+        "f1": "A special diet for your child",
+        "f2": "24 hour follow up",
+        "f3": "A special recipe book to make the diet popular for your child",
+        "f4": "An activity and coloring book to make the child accept the diet, pay attention to nutritional elements, and know what is beneficial and harmful to his health A special recipe book to make the diet popular for your child",
+        "f5": "If the child is an athlete, we will help him with diet to achieve championships in the sports he plays"
+      }
     },
 
+    "pregnant": {
+      "title": "pregnant & lactation nutrition",
+      "price": "499 EGP/",
+      "offer1": "Special offer 6 months 2500 instead of 3000",
+      "offer2": "Special offer 9 months 4000 instead of 4500",
+      "features": {
+        "f1": "Special diet for you",
+        "f2": "A special exercise system for you",
+        "f3": "24 hour follow up",
+        "f4": "NutriChef Recipe Book"
+      }
+    },
 
     "sports": {
-        "title": "sports nutrition",
-        "price": "599 EGP/",
-        "offer1": "Special offer 3 months 1500 instead of 1800",
-        "offer2": "Special offer 6 months 3000 instead of 3600",
-        "features" :{
-            "f1" : "A special diet that takes into account all aspects of you as an athlete" ,
-            "f2" : "24 hour follow up",
-            "f3" : "Plan supplements as desired",
-            "f4" : "NutriChef Recipe Book",
-            "f5" : "Nutri-tone Book Set"
-        }
+      "title": "sports nutrition",
+      "price": "599 EGP/",
+      "offer1": "Special offer 3 months 1500 instead of 1800",
+      "offer2": "Special offer 6 months 3000 instead of 3600",
+      "features": {
+        "f1": "A special diet that takes into account all aspects of you as an athlete",
+        "f2": "24 hour follow up",
+        "f3": "Plan supplements as desired",
+        "f4": "NutriChef Recipe Book",
+        "f5": "Nutri-tone Book Set"
+      }
     },
 
-
     "family": {
-        "title": "family care",
-        "price": "499 EGP/",
-        "offer1": "Special offer 3 months 4000 instead of 4500",
-        "offer2": "Special offer 6 months 8000 instead of 9000",
-        "features" :{
-            "f1" : "All Nutritone packages are now with you and your family. Subscribe for you and them and take care of their health." ,
-            "f2" : "24 hour follow up"
-        
-        }
+      "title": "family care",
+      "price": "499 EGP/",
+      "offer1": "Special offer 3 months 4000 instead of 4500",
+      "offer2": "Special offer 6 months 8000 instead of 9000",
+      "features": {
+        "f1": "All Nutritone packages are now with you and your family. Subscribe for you and them and take care of their health.",
+        "f2": "24 hour follow up"
+      }
     }
+  },
 
-
+"terms": {
+    "term1": {
+      "title": "Introduction",
+      "desc": "Welcome to Nutri-Tone. By using our nutrition planning services, you agree to comply with and be bound by the following terms and conditions. Please review them carefully before using our services. If you do not agree to these terms, please do not use our services."
+    },
+    "term2": {
+      "title": "Services",
+      "desc": "Nutri-Tone provides personalized nutrition planning services tailored to meet the unique health and wellness goals of our clients. Our services include initial consultations, customized nutrition plans, and follow-up support."
+    },
+    "term3": {
+      "title": "Eligibility",
+      "desc": "To use our services, you must: Be at least 18 years old or have the consent of a legal guardian. Provide accurate and complete information during the registration and consultation process."
+    },
+    "term4": {
+      "title": "Payment and Fees",
+      "desc": "Fees for our services are outlined on our website and are subject to change. Payment must be made in full prior to the commencement of services. We accept various forms of payment as indicated on our website."
+    },
+    "term5": {
+      "title": "Cancellation and Refunds",
+      "desc": "Please refer to our Refund Policy for detailed information on cancellations and refunds."
+    },
+    "term6": {
+      "title": "Client Responsibilities",
+      "desc": "As a client of Nutri-Tone, you agree to: Provide accurate and truthful information about your health and lifestyle. Follow the recommendations and guidelines provided in your nutrition plan. Communicate openly with your nutritionist about any concerns or changes in your health."
+    },
+    "term7": {
+      "title": "Limitation of Liability",
+      "desc": "Nutri-Tone is not responsible for any adverse effects or consequences resulting from the use of our services. Our recommendations are based on the information provided by you and are intended for general informational purposes only. Always consult with a healthcare professional before making any significant changes to your diet or lifestyle."
+    },
+    "term8": {
+      "title": "Privacy and Confidentiality",
+      "desc": "We respect your privacy and are committed to protecting your personal information. Please review our Privacy Policy for details on how we collect, use, and safeguard your information."
+    },
+    "term9": {
+      "title": "Intellectual Property",
+      "desc": "All content, including but not limited to text, graphics, logos, and software, is the property of Nutri-Tone and is protected by copyright and other intellectual property laws. You may not use, reproduce, or distribute any content from our services."
+    },
+    "term10": {
+      "title": "Termination",
+      "desc": "We reserve the right to terminate or suspend your access to our services at any time, without notice, for conduct that we believe violates these terms and conditions or is harmful to other clients or our business interests."
+    },
+    "term11": {
+      "title": "Changes to Terms and Conditions",
+      "desc": "Nutri-Tone reserves the right to modify these terms and conditions at any time. Any changes will be posted on our website, and continued use of our services constitutes acceptance of those changes."
+    },
+    "term12": {
+      "title": "Contact Information",
+      "desc": "For any questions or concerns regarding these terms and conditions, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
+    }
+  },
+  "refundPolicy": {
+    "policy1": {
+      "title": "Introduction",
+      "desc": "At Nutri-Tone, we are dedicated to providing exceptional nutrition planning services tailored to meet your unique health and wellness goals. We understand that sometimes circumstances change and you may need to request a refund. This policy outlines the conditions under which refunds will be granted."
+    },
+    "policy2": {
+      "title": "Eligibility for Refunds",
+      "desc": "Refunds may be issued under the following conditions: A. Cancellation Before Service Commencement: If you cancel your nutrition planning service before the initial consultation has taken place, you are eligible for a full refund. B. Dissatisfaction with Initial Consultation: If you are not satisfied with the initial consultation and notify us within 48 hours, you may be eligible for a partial refund, minus an administrative fee of 20%. C. Cancellation After Service Commencement: If you cancel the service after the initial consultation but before receiving your personalized nutrition plan, you are eligible for a refund of 50% of the total service fee. No refunds will be issued once the personalized nutrition plan has been delivered."
+    },
+    "policy3": {
+      "title": "Refund Process",
+      "desc": "To request a refund, please follow these steps: 1- Contact our customer service team at [nutritone.official@gmail.com] within the specified time frames. 2- Provide your name, contact information, and the reason for your refund request. 3- Our team will review your request and respond within 5 business days."
+    },
+    "policy4": {
+      "title": "Non-Refundable Items",
+      "desc": "Certain items and services are non-refundable: Promotional and discounted services. Products or supplements purchased as part of the nutrition planning service."
+    },
+    "policy5": {
+      "title": "Changes to the Refund Policy",
+      "desc": "Nutri-Tone reserves the right to modify this refund policy at any time. Any changes will be communicated to clients via email and updated on our website."
+    },
+    "policy6": {
+      "title": "Contact Information",
+      "desc": "For any questions or concerns regarding this refund policy, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
+    }
+  },
+  "privacyPolicy": {
+    "section1": {
+      "title": "Introduction",
+      "desc": "At Nutri-Tone, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our nutrition planning services."
+    },
+    "section2": {
+      "title": "Information We Collect",
+      "desc": "We may collect the following types of information: 1- Personal Information: Name, email address, phone number, date of birth, and other contact details. 2- Health Information: Medical history, dietary preferences, allergies, and other health-related information provided. 3- Payment Information: Credit card details and billing information required for payment processing. 4- Usage Information: Information about how you use our services, including the pages you visit and the actions you take."
+    },
+    "section3": {
+      "title": "How We Use Your Information",
+      "desc": "We use the information we collect to: 1- Provide and improve our nutrition planning services. 2- Personalize your experience and tailor our recommendations to your specific needs. 3- Process payments and manage your account. 4- Communicate with you about our services, updates, and promotions. 5- Ensure the security and integrity of our services."
+    },
+    "section4": {
+      "title": "How We Share Your Information",
+      "desc": "We do not sell or rent your personal information to third parties. We may share your information with: 1- Service Providers: Third-party vendors who help us provide and improve our services such as payment processors and IT support. 2- Legal Requirements: Authorities or regulatory bodies when required by law or to protect our legal rights. 3- Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred to a new owner."
+    },
+    "section5": {
+      "title": "Data Security",
+      "desc": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, loss, or misuse. However, no system can be completely secure, and we cannot guarantee the absolute security of your information."
+    },
+    "section6": {
+      "title": "Your Rights",
+      "desc": "You have the right to: 1- Access and obtain a copy of your personal information. 2- Correct or update your personal information. 3- Request the deletion of your personal information. 4- Object to the processing of your personal information. 5- Withdraw your consent at any time, where we rely on your consent to process your information."
+    },
+    "section7": {
+      "title": "Cookies and Tracking Technologies",
+      "desc": "We use cookies and similar tracking technologies to enhance your experience on our website. Cookies are small data files stored on your device that help us understand how you use our services and improve functionality. You can manage your cookie preferences through your browser settings."
+    },
+    "section8": {
+      "title": "Changes to This Privacy Policy",
+      "desc": "We may update this Privacy Policy from time to time. Any changes will be posted on our website, and we will notify you of significant changes through email or other communication methods. Your continued use of our services constitutes acceptance of the updated Privacy Policy."
+    },
+    "section9": {
+      "title": "Contact Us",
+      "desc": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
+    }
   }
-
-  
 }

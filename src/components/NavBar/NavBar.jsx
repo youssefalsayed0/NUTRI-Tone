@@ -79,14 +79,14 @@ export default function NavBar() {
       <nav ref={navbarRef} className="navbar p-0  ps-md-5  text-white bg-black fixed-top  ">
         <div className="container-fluid p-0">
           <Link className="navbar-brand " >
-          <img src={logo} alt="logo"  className="img-fluid " width={120}/>
+          <img src={logo} alt="logo"  className="img-fluid me-5 ms-3" width={70}/>
           </Link>
 
           {/* Navbar links visible on all screen sizes */}
           <div className="d-flex align-items-center">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-xl-flex flex-row nav-1 d-none text-uppercase ">
               <li className="nav-item me-5">
-                <NavLink to="/home" className="nav-link  text-white navbar-link" activeClassName="active"  >
+                <NavLink to="/" className="nav-link  text-white navbar-link" activeClassName="active"  >
                   Home
                 </NavLink>
               </li>
@@ -110,7 +110,7 @@ export default function NavBar() {
                   Contact
                 </NavLink>
               </li>
-              <li className="nav-item dropdown ">
+              {/* <li className="nav-item dropdown ">
                   <Link
                     className="nav-link dropdown-toggle text-white"
                     id="languageDropdown"
@@ -146,7 +146,7 @@ export default function NavBar() {
                       </span>
                     </li>
                   </ul>
-                </li>
+                </li> */}
             </ul>
 
             {/* Toggler visible alongside links on all screens */}
@@ -207,50 +207,54 @@ export default function NavBar() {
 
               <div className="d-none d-xl-block text-white">
             <p className="text-white-50 mt-4">We’re a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX.</p>
-            <div className="heading">
+            <div className=" mt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
               <h6 className="text-uppercase">contact us</h6>
-              <a href="tel:+201069796878"  className="d-flex align-items-center link">
-              <span className="icon">
-                  <i className="fa-solid fa-phone text-white"></i> 
-              </span>
-              <div className="box">
-                <p className="title">ssd</p>
-                <p className="data">dsds</p>
-              </div>
-              </a>
-              <a href="tel:+201069796878"  className="d-flex align-items-center link">
-              <span className="icon">
-                  <i className="fa-solid fa-phone text-white"></i> 
-              </span>
-              <div className="box">
-                <p className="title">ssd</p>
-                <p className="data">dsds</p>
-              </div>
-              </a>
-              <a href="tel:+201069796878"  className="d-flex align-items-center link">
-              <span className="icon">
-                  <i className="fa-solid fa-phone text-white"></i> 
-              </span>
-              <div className="box">
-                <p className="title">ssd</p>
-                <p className="data">dsds</p>
-              </div>
-              </a>
+       <div className="contact mt-5">
+               <a href="tel:+201069796878"  className="d-flex  link">
+               <span className="icon">
+                   <i className="fa-solid fa-phone fa-lg"></i> 
+               </span>
+               <div className="box">
+                 <p className="title">phone</p>
+                 <p className="data">01069796878</p>
+               </div>
+               </a>
+
+               <a href="mailto:official.nutritone@gmail.com"  className="d-flex link">
+               <span className="icon">
+                   <i className="fa-regular fa-envelope fa-lg"></i> 
+               </span>
+               <div className="box">
+                 <p className="title">email</p>
+                 <p className="data">official.nutritone@gmail.com</p>
+               </div>
+               </a>
+
+               <a className="d-flex link">
+               <span className="icon">
+                   <i className="fa-solid fa-location-dot fa-lg"></i> 
+               </span>
+               <div className="box">
+                 <p className="title">address</p>
+                 <p className="data">Soon</p>
+               </div>
+               </a>
+       </div>
             </div>
-            <div className="heading">
+            <div className="mt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
               <h6 className="text-uppercase">stay connected</h6>
-              <div className=" d-flex text-white-50 mt-4 ms-4 ">
+              <div className=" d-flex text-white-50 mt-4 ms-3 ">
               <div className="social-icons d-flex   align-items-center">
                 <a href="https://www.facebook.com/NUTRITONE1/ " target="_blank">
-                    <i className="fa-brands fa-facebook-f fa-lg me-3" />
+                    <i className="fa-brands fa-facebook-f fa-lg me-4" />
                 </a>
                 <a href="https://www.instagram.com/nutri_tone/"  target="_blank">
-                    <i className="fa-brands fa-instagram fa-lg me-3" />
+                    <i className="fa-brands fa-instagram fa-lg me-4" />
                 </a>
                <a href="https://www.youtube.com/channel/UC-Ro9sXpKXdFjau5ww1dkRQ"  target="_blank">
-                   <i className="fa-brands fa-youtube fa-lg me-3" />
+                   <i className="fa-brands fa-youtube fa-lg me-4" />
                </a>
            <a href="https://www.tiktok.com/@nutri.tone?lang=en_official?lang=en"  target="_blank">
                    <i className="fa-brands fa-tiktok fa-lg " />
