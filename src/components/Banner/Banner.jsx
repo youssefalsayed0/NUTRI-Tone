@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import Overlay from "../Overlay/Overlay";
 import { useTranslation } from "react-i18next";
-
-export default function Banner({ title , image  }) {
+import top from "../../assets/images/Ellipse-top.webp"
+export default function Banner({ title   }) {
   const { t } = useTranslation();
   return (
  <>
 <section
   className="banner gradient-bg bg-cover shadow dark text-light text-center position-relative text-capitalize"
   style={{
-    backgroundImage: `url(${image})`,
+    backgroundImage: `url(${top})`,
   }}
 >
   <Overlay />

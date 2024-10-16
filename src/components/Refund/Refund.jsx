@@ -6,7 +6,7 @@ export default function Refund() {
     const {t} =  useTranslation();
   return (
 <>
-<Banner title={t("banner.refund")} image={""}/>
+<Banner title={t("banner.refund")} />
 <RefundSection/>
 </>
   )

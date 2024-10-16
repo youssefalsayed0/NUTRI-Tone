@@ -6,7 +6,7 @@ export default function Privacy() {
     const {t} =  useTranslation();
   return (
 <>
-<Banner title={t("banner.privacy")} image={""}/>
+<Banner title={t("banner.privacy")} />
 <PrivacySection/>
 </>
   )

@@ -17,7 +17,8 @@
     "contact-us": "contact-us",
     "terms": "terms & conditions",
     "refund": "refund & policy",
-    "privacy": "privacy policy"
+    "privacy": "privacy policy",
+    "packages": "packages"
   },
 
   "about-us-section": {
@@ -40,9 +41,38 @@
     "button2": "KNOW MORE",
 
     "obesity": {
-      "title": "OBESITY $ underweight",
+      "title": "OBESITY & underweight",
+      "desc": {
+        "description" : "",
+        "title": "The Role and Importance of Nutrition in Cases of Obesity and Underweight",
+        "ben1": {
+          "title": "Obesity",
+          "desc": "Obesity is defined as an unhealthy accumulation of fat in the body, which can lead to numerous health problems. Nutrition plays a vital role in managing it."
+        },
+        "ben2": {
+          "title": "Importance of Nutrition",
+          "desc": "Calorie Tracking: The amount of calories consumed must be monitored to reduce weight. Choosing Healthy Foods: Focusing on fruits, vegetables, whole grains, and healthy proteins helps in reducing fat. Avoiding Processed Foods: Reducing the intake of sugars and saturated fats helps in weight control."
+        },
+        "ben3": {
+          "title": "Nutrition Strategies",
+          "desc": "Meal Distribution: Eating small, frequent meals helps maintain energy levels. Drinking Water: Helps in feeling full and reduces calorie intake."
+        },
+        "ben4": {
+          "title": "Underweight",
+          "desc": "Underweight is considered a deficiency in weight compared to the ideal body mass index (BMI) and can negatively affect health."
+        },
+        "ben5": {
+          "title": "Importance of Nutrition",
+          "desc": "Increasing Caloric Intake: Caloric intake should be increased by consuming nutrient-rich meals. Choosing Calorie-Dense Foods: Such as nuts, avocados, and healthy cooking oils."
+        },
+        "ben6": {
+          "title": "Nutrition Strategies",
+          "desc": "Snacking: Adding calorie-dense snacks between main meals. Increasing Protein: Helps in muscle building and gaining weight healthily."
+        }
+      },
+
       "golden": {
-        "title": "golden package",
+        "title": "obesity golden package",
         "price": "499 EGB/",
         "offer": "Special offer 3 months 1250 instead of 1500",
         "features": {
@@ -53,7 +83,7 @@
         }
       },
       "silver": {
-        "title": "silver package",
+        "title": "obesity silver package",
         "price": "399 EGB/",
         "offer": "Special offer 3 months 999 instead of 1200",
         "features": {
@@ -66,6 +96,46 @@
 
     "clinical": {
       "title": "clinical nutrition",
+      "desc": {
+        "description" : "Clinical nutrition plays a vital role in the management of many health conditions, including diabetes and hypertension Blood problems, kidney and liver, heart disease, digestive system and thyroid. Here's a look at her role every case",
+        "title": "The Role and Importance of Therapeutic Nutrition in Managing Health Conditions",
+        "ben1": {
+          "title": "Diabetes",
+          "desc": "Balanced nutrition helps regulate blood glucose levels. Meal planning includes controlling carbohydrates and relying on low glycemic index foods."
+        },
+        "ben2": {
+          "title": "Blood Pressure",
+          "desc": "Reduce Sodium: Decrease salt intake to help lower blood pressure. Increase Potassium: Consume potassium-rich foods like fruits and vegetables. Follow the DASH Diet."
+        },
+        "ben3": {
+          "title": "Kidney Diseases",
+          "desc": "Protein Control: Reduce protein intake in some cases to lessen the burden on the kidneys. Fluid Balance: Manage fluid intake and output to maintain kidney health. Customize meals: Restrict protein, phosphorus, and potassium based on the stage of the disease."
+        },
+        "ben4": {
+          "title": "Liver Diseases",
+          "desc": "Balanced Diet: Eat nutrient-rich foods while reducing saturated fats."
+        },
+        "ben5": {
+          "title": "Heart Diseases",
+          "desc": "Therapeutic nutrition contributes to improving heart health. Reduce Saturated Fats: Decrease the intake of harmful fats and cholesterol to support heart health. Healthy Fats: Choose healthy fats like olive oil and fatty fish. Increase Fiber: Consume fiber-rich foods such as whole grains and fruits."
+        },
+        "ben6": {
+          "title": "Colon and Digestive System",
+          "desc": "Therapeutic nutrition enhances digestive health. Increase Fiber: Fiber helps improve bowel movements and reduce digestive issues. Probiotics: Promote gut health and balance good bacteria. Hydration: Maintaining hydration aids digestion. Colon Health: Avoid irritant foods like spicy and fatty foods. Increase fiber intake to improve colon health and reduce the risk of colon diseases."
+        },
+        "ben7": {
+          "title": "Role of Nutrition in Cases of Hyperthyroidism and Hypothyroidism",
+          "desc": "The thyroid gland significantly affects many body functions, and nutrition is an important factor in managing hyperthyroidism (overactive thyroid) and hypothyroidism (underactive thyroid)."
+        },
+        "ben8": {
+          "title": "In Case of Hyperthyroidism",
+          "desc": "Reduce Iodine: It is important to reduce the intake of iodine-rich foods such as fish and seaweed, as excess iodine can worsen the condition. Anti-inflammatory Foods: Consume anti-inflammatory foods like fruits and vegetables to reduce inflammation and improve overall health. Avoid Caffeine: Caffeine can increase anxiety and heart rate, so it is preferable to minimize it."
+        },
+        "ben9": {
+          "title": "In Case of Hypothyroidism",
+          "desc": "Increase Iodine Intake: Consuming iodine-rich foods such as fish and iodized salt can help support thyroid function. Focus on Selenium and Zinc: These minerals support thyroid health and can be found in nuts and seeds. Eat fiber-rich foods to improve digestion and alleviate weight issues related to hypothyroidism."
+        }
+      },
       "price": "499 EGP/",
       "offer1": "Special offer 3 months 1250 instead of 1500",
       "offer2": "Special offer 6 months 2500 instead of 3000",
@@ -82,6 +152,43 @@
 
     "kids": {
       "title": "kids nutrition",
+      "desc": {
+        "title": "The Importance and Role of Nutrition for Children",
+        "description" :"Proper nutrition for children is an essential element for their healthy growth and development. Some key points about the importance and role of nutrition for children",
+        "ben1": {
+          "title": "Growth and Development",
+          "desc": "Proper nutrition for children is essential for their healthy growth and development. Good nutrition provides the necessary nutrients for the growth of bones, muscles, and organs."
+        },
+        "ben2": {
+          "title": "Brain Development",
+          "desc": "The brain requires nutrients such as Omega-3 fatty acids, which play an important role in developing cognitive abilities."
+        },
+        "ben3": {
+          "title": "Immune Boosting",
+          "desc": "Vitamins and minerals like Vitamin C and zinc help enhance the immune system, reducing the chances of illness."
+        },
+        "ben4": {
+          "title": "Healing",
+          "desc": "Good nutrition contributes to faster recovery from illnesses and injuries."
+        },
+        "ben5": {
+          "title": "Overall Health",
+          "desc": "Proper nutrition reduces the risk of chronic diseases such as obesity, diabetes, and heart diseases."
+        },
+        "ben6": {
+          "title": "Performance Improvement",
+          "desc": "Children who consume a balanced diet have higher energy levels and better concentration in school."
+        },
+        "ben7": {
+          "title": "Developing Healthy Eating Habits",
+          "desc": "Providing a variety of healthy foods from a young age helps build positive eating habits that last a lifetime."
+        },
+        "ben8": {
+          "title": "Social Interaction",
+          "desc": "Eating with family can enhance social bonds and help children learn healthy eating practices."
+        }
+      },
+
       "price": "499 EGP / ",
       "offer1": "Special offer 3 months 1250 instead of 1500",
       "offer2": "Special offer 6 months 2500 instead of 3000",
@@ -96,6 +203,51 @@
 
     "pregnant": {
       "title": "pregnant & lactation nutrition",
+      "desc": {
+        "description" : "Proper nutrition during pregnancy and breastfeeding is an essential factor in ensuring the health of the mother and child. Some important points about the role of nutrition in these periods",
+        "title": "The Importance and Role of Nutrition for Pregnant and Nursing Women",
+        "ben1": {
+          "title": "Supporting Fetal Growth",
+          "desc": "Mothers need to increase their intake of vitamins and minerals such as folic acid, iron, and calcium to support fetal growth."
+        },
+        "ben2": {
+          "title": "Brain Development",
+          "desc": "Nutrients like Omega-3 fatty acids play a vital role in brain development."
+        },
+        "ben3": {
+          "title": "Enhancing Maternal Health",
+          "desc": "Energy needs increase during pregnancy, requiring adequate caloric intake."
+        },
+        "ben4": {
+          "title": "Reducing Risk of Complications",
+          "desc": "Good nutrition helps reduce the risk of pregnancy complications such as gestational diabetes and high blood pressure."
+        },
+        "ben5": {
+          "title": "Breastfeeding",
+          "desc": "Nursing mothers need additional calories to ensure adequate and nutritious milk production."
+        },
+        "ben6": {
+          "title": "Providing Nutrients to the Infant",
+          "desc": "Breast milk contains all the essential nutrients necessary for the child's growth."
+        },
+        "ben7": {
+          "title": "Boosting Immunity",
+          "desc": "Good nutrition supports the immune health of both mother and child, helping to resist diseases."
+        },
+        "ben8": {
+          "title": "Preventing Inflammation",
+          "desc": "Certain foods like fruits and vegetables rich in antioxidants enhance immune health."
+        },
+        "ben9": {
+          "title": "Mental Health",
+          "desc": "Balanced nutrition positively affects the mother's mental state and helps reduce anxiety and depression."
+        },
+        "ben10": {
+          "title": "Hormonal Balance",
+          "desc": "Certain foods help balance hormones, contributing to improved mental health."
+        }
+      },
+
       "price": "499 EGP/",
       "offer1": "Special offer 6 months 2500 instead of 3000",
       "offer2": "Special offer 9 months 4000 instead of 4500",
@@ -109,6 +261,52 @@
 
     "sports": {
       "title": "sports nutrition",
+  
+"desc": {
+  "title": "The Role and Importance of Nutrition for Athletes",
+  "description" : "In improving sports performance and enhancing public health. Essentially Nutrition is an element Some key points about the role and importance of nutrition for athletes",
+  "ben1": {
+    "title": "Improving Performance",
+    "desc": "Athletes need sufficient calories to support their physical activity and enhance performance."
+  },
+  "ben2": {
+    "title": "Increasing Endurance",
+    "desc": "Good nutrition helps enhance endurance and high performance during workouts."
+  },
+  "ben3": {
+    "title": "Rapid Recovery",
+    "desc": "Proteins play an important role in repairing muscle tissues after exercise."
+  },
+  "ben4": {
+    "title": "Energy Replenishment",
+    "desc": "Consuming carbohydrates post-exercise helps replenish glycogen stores in the muscles."
+  },
+  "ben5": {
+    "title": "Injury Prevention",
+    "desc": "Getting calcium and vitamin D enhances bone health and reduces the risk of fractures."
+  },
+  "ben6": {
+    "title": "Supporting Immune Function",
+    "desc": "Balanced nutrition supports the immune system, reducing the chances of illness."
+  },
+  "ben7": {
+    "title": "Achieving Physical Goals",
+    "desc": "Consuming adequate protein helps in building muscle mass."
+  },
+  "ben8": {
+    "title": "Fat Loss",
+    "desc": "Following a balanced diet can help athletes achieve their weight loss goals."
+  },
+  "ben9": {
+    "title": "General Health",
+    "desc": "Good nutrition positively affects mental health, aiding in improved focus and motivation."
+  },
+  "ben10": {
+    "title": "Reducing Disease Risks",
+    "desc": "Eating healthy foods contributes to the prevention of chronic diseases such as diabetes and heart disease."
+  }
+}
+,
       "price": "599 EGP/",
       "offer1": "Special offer 3 months 1500 instead of 1800",
       "offer2": "Special offer 6 months 3000 instead of 3600",
@@ -123,6 +321,51 @@
 
     "family": {
       "title": "family care",
+      "desc": {
+        "description" : "The “Family Care” program from Nutritone is an initiative aimed at promoting health and proper nutrition within the family. Some points that explain its importance and role",
+        "title": "The Importance and Role of Nutrition in the \"Family Care\" Program by NutriTone",
+        "ben1": {
+          "title": "Enhancing Nutritional Awareness",
+          "desc": "The program provides information about proper nutrition and the importance of consuming healthy foods."
+        },
+        "ben2": {
+          "title": "Improving Nutritional Knowledge",
+          "desc": "It contributes to understanding meal components and how to choose beneficial foods."
+        },
+        "ben3": {
+          "title": "Encouraging Positive Competition",
+          "desc": "The program encourages family members to compete in achieving specific health goals, increasing enthusiasm and motivation."
+        },
+        "ben4": {
+          "title": "Achieving Results",
+          "desc": "Competition can lead to tangible results in improving health, such as weight loss or enhanced fitness."
+        },
+        "ben5": {
+          "title": "Strengthening Family Relationships",
+          "desc": "The program fosters cooperation among family members in preparing healthy meals and engaging in physical activities together."
+        },
+        "ben6": {
+          "title": "Family Time",
+          "desc": "It provides an opportunity to enjoy time together through healthy activities, strengthening family bonds."
+        },
+        "ben7": {
+          "title": "Improving General Health",
+          "desc": "It helps reduce the risks of chronic diseases like obesity, diabetes, and heart disease through a balanced diet."
+        },
+        "ben8": {
+          "title": "Enhancing Energy and Activity",
+          "desc": "Proper nutrition boosts energy levels, helping individuals perform their daily activities efficiently."
+        },
+        "ben9": {
+          "title": "Providing Psychological Support",
+          "desc": "Improving dietary habits can enhance individuals' self-confidence and make them feel accomplished."
+        },
+        "ben10": {
+          "title": "Supporting Commitment",
+          "desc": "Support from family enhances commitment to healthy lifestyle changes."
+        }
+      },
+
       "price": "499 EGP/",
       "offer1": "Special offer 3 months 4000 instead of 4500",
       "offer2": "Special offer 6 months 8000 instead of 9000",
@@ -133,7 +376,19 @@
     }
   },
 
-"terms": {
+  "packages-details-section": {
+    "links": {
+      "kids": "kids nutrition",
+      "family": "family care",
+      "sports": "sports nutrition",
+      "clinical": "clinical nutrition",
+      "obesity": "obesity & underweight",
+      "preg": "pregnant & lactation nutrition"
+    },
+    "help": "Need Help?"
+  },
+
+  "terms": {
     "term1": {
       "title": "Introduction",
       "desc": "Welcome to Nutri-Tone. By using our nutrition planning services, you agree to comply with and be bound by the following terms and conditions. Please review them carefully before using our services. If you do not agree to these terms, please do not use our services."
@@ -246,5 +501,16 @@
       "title": "Contact Us",
       "desc": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
     }
+  },
+
+  "contact": {
+    "title": "Send a message",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "subject" :"subject",
+    "message": "Tell Us About Your Needs *",
+    "button": "Send Message",
+    "heading" : "feel free to ask us anything"
   }
 }

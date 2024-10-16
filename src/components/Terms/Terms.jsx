@@ -9,7 +9,7 @@ const {t} =  useTranslation();
   return (
 <>
 
-<Banner title={t("banner.terms")} image={""}/>
+<Banner title={t("banner.terms")}/>
 <TermsSection/>
     </>
   );

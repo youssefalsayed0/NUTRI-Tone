@@ -36,14 +36,13 @@ export default function Testimonials() {
           <div className="col-lg-6 ">
             <div
               id="carouselExampleIndicators"
-              className="carousel slide p-5 bg-black"
+              className="carousel  slide p-5 bg-black"
               data-bs-ride="carousel" // Start carousel automatically
               data-bs-interval="3000" // Set interval for sliding (3 seconds)
             >
               <div className="carousel-inner">
                 {reviews.map((review, index) => (
                   <div key={review.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                    
                     <div className="stars mb-4">
                       <i className="fa-solid fa-star fa-lg"></i>
                       <i className="fa-solid fa-star fa-lg"></i>
@@ -51,7 +50,6 @@ export default function Testimonials() {
                       <i className="fa-solid fa-star fa-lg"></i>
                       <i className="fa-solid fa-star fa-lg"></i>
                     </div>
-                    
                     <p className="review">{review.review}</p>
                     <svg className="mt-5" xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
                     <p className="m-0  text-uppercase fw-bolder fs-4">{review.name}</p>

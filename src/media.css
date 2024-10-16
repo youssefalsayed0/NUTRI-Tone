@@ -57,5 +57,8 @@
   .divider .main-title .text-line text {
     font-size: 2.5em;
   }
+  .packages-details-items .packages-sidebar {
+    padding-inline-end:12px;
+  }
 }
  

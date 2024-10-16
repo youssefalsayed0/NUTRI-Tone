@@ -24,7 +24,7 @@ export default function Plans() {
         t("plans.obesity.golden.features.f4"),
       ],
       image: obesity,
-      path: "/obesity-golden",
+      path: "/Packages/package-details/obesity&underweight",
     },
     {
       key: "obesity.silver",
@@ -37,7 +37,7 @@ export default function Plans() {
         t("plans.obesity.silver.features.f3"),
       ],
       image: obesity,
-      path: "/obesity-silver",
+      path: "/Packages/package-details/obesity&underweight",
     },
     {
       key: "clinical",
@@ -55,7 +55,7 @@ export default function Plans() {
         t("plans.clinical.features.f7"),
       ],
       image: clinical,
-      path: "/clinical",
+      path: "/Packages/package-details/clinical-nutrition",
     },
     {
       key: "kids",
@@ -71,7 +71,7 @@ export default function Plans() {
         t("plans.kids.features.f5"),
       ],
       image: kids,
-      path: "/kids",
+      path: "/Packages/package-details/kids-nutrition",
     },
     {
       key: "pregnant",
@@ -86,7 +86,7 @@ export default function Plans() {
         t("plans.pregnant.features.f4"),
       ],
       image: pregnant,
-      path: "/pregnant",
+      path: "/Packages/package-details/pregnant&lactation-nutrition",
     },
     {
       key: "sports",
@@ -102,7 +102,7 @@ export default function Plans() {
         t("plans.sports.features.f5"),
       ],
       image: sports,
-      path: "/sports",
+      path: "/Packages/package-details/sports-nutrition",
     },
     {
       key: "family",
@@ -115,7 +115,7 @@ export default function Plans() {
         t("plans.family.features.f2"),
       ],
       image: family,
-      path: "/family",
+      path: "/Packages/package-details/family-care",
     },
   ];
 

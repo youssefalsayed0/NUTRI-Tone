@@ -101,8 +101,8 @@ export default function NavBar() {
                 </NavLink>
               </li>
               <li className="nav-item me-5 ">
-                <NavLink to="/test" className="nav-link text-white navbar-link"  activeClassName="active">
-                  test
+                <NavLink to="/Packages" className="nav-link text-white navbar-link"  activeClassName="active">
+                  Packages
                 </NavLink>
               </li>
               <li className="nav-item  me-5 ">
@@ -210,7 +210,7 @@ export default function NavBar() {
             <div className=" mt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
               <h6 className="text-uppercase">contact us</h6>
-       <div className="contact mt-5">
+       <div className=" mt-5">
                <a href="tel:+201069796878"  className="d-flex  link">
                <span className="icon">
                    <i className="fa-solid fa-phone fa-lg"></i> 
