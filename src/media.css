@@ -8,6 +8,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+  :root {
+    --main-padding: 60px 0;
+  }
+
   .text--line {
     font-size: 3rem;
     font-weight: 600;

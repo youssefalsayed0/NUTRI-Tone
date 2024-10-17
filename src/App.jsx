@@ -3,7 +3,6 @@ import { Toaster } from "react-hot-toast";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import Layout from "./components/Layout/Layout";
-import Services from "./components/Services/Services";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AboutUs from "./components/AboutUs/AboutUs";
 import MouseFollower from "mouse-follower";
@@ -20,6 +19,7 @@ import SportsPack from "./components/SportsPack/SportsPack";
 import KidsPack from "./components/KidsPack/KidsPack";
 import PregnantPack from "./components/PregnantPack/PregnantPack";
 import ClinicalPack from "./components/ClinicalPack/ClinicalPack";
+import Bmi from "./components/Bmi/Bmi";
 
 
 
@@ -32,11 +32,11 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "home", element: <Home /> },
       { path: "about-us", element: <AboutUs /> },
-      { path: "services", element: <Services /> },
       { path: "contact-us", element: <ContactUs /> },
       { path: "terms-&-conditions", element: <Terms /> },
       { path: "refund-&-policy", element: <Refund /> },
       { path: "privacy-policy", element: <Privacy /> },
+      { path: "bmi", element: <Bmi /> },
       {
         path: "packages",
         element: <Packages />,

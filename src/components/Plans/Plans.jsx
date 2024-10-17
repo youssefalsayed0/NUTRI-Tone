@@ -122,72 +122,74 @@ export default function Plans() {
   return (
     <>
       <section className="plans main-p">
-        <AnimatedTitle text={t("main-title.packages.title")} title={t("main-title.packages.desc")} />
+        <AnimatedTitle text={t("main-title.packages.title")} />
         <div className="container">
           <div className="row ">
             {packages.map((pkg, index) => (
               <div className="col-md-6 col-xl-4 mb-4 d-flex" key={index}>
-              <div className="package-card d-flex flex-column p-5"> {/* Add flex-column here */}
-                <div className="image">
-                  <img src={pkg.image} className="img-fluid" alt={pkg.title} />
-                </div>
-                <div className="info mt-5">
-                  <h5>{pkg.title}</h5>
-                  <h5 className="h3 mt-3">
-                    {pkg.price}
-                    <span className="h5 ms-1">month</span>
-                  </h5>
-                </div>
-                <div className="offers mt-4">
-                  <ul className="list-unstyled">
-                    <li className="my-1">% {pkg.offer}</li>
-                    {pkg.offer2 && <li>% {pkg.offer2}</li>} {/* Render the second offer if it exists */}
-                  </ul>
-                </div>
-                <div className="features mt-5">
-                  <ul className="list-unstyled">
-                    {pkg.features.map((feature, idx) => (
-                      <li key={idx} className="text-white-50 text-capitalize my-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="35"
-                          height="10"
-                          viewBox="0 0 35 10"
-                          fill="none"
-                        >
-                          <path
-                            d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z"
-                            fill="#eefb13"
-                          />
-                          <path
-                            d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z"
-                            fill="#eefb13"
-                          />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="buttons text-center mt-auto"> {/* Add mt-auto to push buttons to the bottom */}
-                  <Link
-                    type="button"
-                    to="/contact"
-                    className="main-btn rounded-0 text-uppercase position-relative mt-5"
-                  >
-                    {t("plans.button1")}
-                  </Link>
-                  <Link
-                    type="button"
-                    to={pkg.path}
-                    className="main-btn rounded-0 text-uppercase position-relative mt-2"
-                  >
-                    {t("plans.button2")}
-                  </Link>
+                <div className="package-card d-flex flex-column p-5"> {/* Add flex-column here */}
+                  <div className="image">
+                    <img src={pkg.image} className="img-fluid" alt={pkg.title} />
+                  </div>
+                  <div className="info mt-5">
+                    <h5>{pkg.title}</h5>
+                    <h5 className="h3 mt-3">
+                      {pkg.price}
+                      <span className="h5 ms-1">month</span>
+                    </h5>
+                  </div>
+                  <div className="offers mt-4">
+                    <ul className="list-unstyled">
+                      <li className="my-1">% {pkg.offer}</li>
+                      {pkg.offer2 && <li>% {pkg.offer2}</li>} {/* Render the second offer if it exists */}
+                    </ul>
+                  </div>
+                  <div className="features mt-5">
+                    <ul className="list-unstyled">
+                      {pkg.features.map((feature, idx) => (
+                        <li key={idx} className="text-white-50 text-capitalize my-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="10"
+                            viewBox="0 0 35 10"
+                            fill="none"
+                          >
+                            <path
+                              d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z"
+                              fill="#eefb13"
+                            />
+                            <path
+                              d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z"
+                              fill="#eefb13"
+                            />
+                          </svg>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="buttons text-center mt-auto"> {/* Add mt-auto to push buttons to the bottom */}
+                    <Link
+
+                      type="button"
+                      to="/contact"
+                      className="main-btn rounded-0 text-uppercase position-relative mt-5"
+                    >
+                      {t("plans.button1")}
+                    </Link>
+                    <Link
+
+                      type="button"
+                      to={pkg.path}
+                      className="main-btn rounded-0 text-uppercase position-relative mt-2"
+                    >
+                      {t("plans.button2")}
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-            
+
             ))}
           </div>
         </div>

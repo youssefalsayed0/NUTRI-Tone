@@ -113,6 +113,7 @@ span {
       /* Dark again at the top */
   );
 }
+
 .top-bar a {
   font-size: 14px;
   line-height: 24px;
@@ -134,6 +135,9 @@ nav.nav-style {
   animation: slide-down var(--main-transition);
   margin-top: 0px;
 }
+.navbar .nav-link:hover{
+  color: var(--main-color) !important;
+}
 .navbar .active {
   color: var(--main-color) !important;
 }
@@ -147,6 +151,9 @@ nav.nav-style {
   border-width: 0px 0px 0px 1px;
   border-color: #ffffff33;
   border-style: solid;
+}
+nav  .dropdown-item:hover {
+  background-color: black;
 }
 .navbar .nav-1 li a {
   font-size: 13px;
@@ -576,7 +583,6 @@ color: var(--main-color);
   border-bottom: 1px solid #7a7a7a;
   transition: var(--main-transition);
 }
-
 .packages-details-items .packages-sidebar .services-list li .active::before {
   position: absolute;
   left: 0;
@@ -586,7 +592,6 @@ color: var(--main-color);
   width: 5px;
   background: var(--main-color);
 }
-
 .packages-details-items .packages-sidebar .services-list a::after {
   position: absolute;
   right: 25px;
@@ -597,22 +602,17 @@ color: var(--main-color);
   transform: translateY(-50%);
   font-size: 20px;
 }
-
 .packages-details-items .packages-sidebar .services-list li a:hover {
   color: var(--main-color);
 }
-
 .packages-details-items .packages-sidebar {
   padding-inline-end: 35px;
 }
-
 .packages-details-items .packages-sidebar .single-widget.quick-contact {
   position: relative;
-
   background-size: cover;
   background-position: center;
 }
-
 .packages-details-items .packages-sidebar .single-widget.quick-contact::after {
   position: absolute;
   left: 0;
@@ -623,7 +623,6 @@ color: var(--main-color);
   background: #232323;
   opacity: 0.7;
 }
-
 .packages-details-items
   .packages-sidebar
   .single-widget.quick-contact
@@ -633,7 +632,6 @@ color: var(--main-color);
   z-index: 1;
   text-align: center;
 }
-
 .packages-details-items
   .packages-sidebar
   .single-widget.quick-contact
@@ -652,7 +650,6 @@ color: var(--main-color);
   z-index: 1;
   text-align: center;
 }
-
 .packages-details-items
   .packages-sidebar
   .single-widget.quick-contact
@@ -669,7 +666,6 @@ color: var(--main-color);
   border-radius: 50%;
   opacity: 0.3;
 }
-
 
 .services-single-content p {
   line-height: 2.1;
@@ -691,27 +687,70 @@ color: var(--main-color);
   padding: 80px 0;
 }
 
-
-.contact .contact-items {
+.contact-items {
 padding: 10px;
 }
 
-.contact .contact-items .content input,
-.contact .contact-items .content textarea {
+ .contact-items .content input,
+ .contact-items .content textarea,
+ .contact-items select {
   border: none;
   padding: 20px;
   background: #272727;
   color: white;
   min-height: 60px;
- 
 }
-.contact .contact-items .content input::placeholder,
-.contact .contact-items .content textarea::placeholder {
+.contact-items .content input:focus,
+.contact-items .content textarea:focus,
+.contact-items select:focus,
+.contact-items .content input:active,
+.contact-items .content textarea:active,
+.contact-items select:active
+ {
+  color: white;
+  background: #272727;
+  box-shadow: 0 0 0 .1rem var(--main-color);
+}
+
+ .contact-items .content input::placeholder,
+ .contact-items .content textarea::placeholder {
   color: #f0f0f0; 
   opacity: 1; 
 }
 
-.contact .contact-items .content textarea {
+.contact-items .content textarea {
   min-height: 220px;
 }
 
+.contact-items select {
+  position: relative;
+
+}
+
+.contact-items select option {
+  padding: 600pxpx;
+}
+
+.bmi{}
+
+
+.call .container .row{
+background-color: var(--main-color);
+}
+
+.call a {
+  background-color: rgba(39, 39, 39, 0.192);
+} 
+.call a::after, 
+.call a::before {
+  background-color: rgb(0, 0, 0);
+} 
+.call a:hover{
+  color: var(--main-color) !important;
+} 
+
+.plans-slider .slider-container .image img {
+transition: var(--main-transition);}
+.plans-slider .slider-container .image:hover img {
+  scale: 1.2;
+}

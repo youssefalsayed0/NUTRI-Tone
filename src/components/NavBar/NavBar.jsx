@@ -6,7 +6,10 @@ import { useEffect, useRef } from "react";
 export default function NavBar() {
   const navbarRef = useRef(null);
   const offcanvasRef = useRef(null); // Reference for offcanvas
-  const toggleRef = useRef(null);
+  
+
+
+ 
   const location = useLocation();
   const {  i18n } = useTranslation();
 
@@ -15,14 +18,13 @@ export default function NavBar() {
     offcanvasRef.current.classList.remove("show");
   };
 
-  const openOffcanvas = () => {
-    offcanvasRef.current.classList.add("show");
-  };
 
   useEffect(() => {
     const navLinks = offcanvasRef.current.querySelectorAll(".navbar-link");
+    const offbackdrop = document.getElementsByClassName('offcanvas-backdrop');
     const handleNavLinkClick = () => {
       closeOffcanvas();
+      offbackdrop.current.classList.remove("show");   
     };
 
     navLinks.forEach((link) =>
@@ -52,7 +54,7 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = navbarRef.current;
-      const toggle = toggleRef.current;
+
 
       if (window.scrollY > 50) {
         navbar.classList.add( "nav-style" , );
@@ -95,11 +97,6 @@ export default function NavBar() {
                   About Us
                 </NavLink>
               </li>
-              <li className="nav-item  me-5 ">
-                <NavLink to="/services" className="nav-link text-white navbar-link" activeClassName="active" >
-                  Services
-                </NavLink>
-              </li>
               <li className="nav-item me-5 ">
                 <NavLink to="/Packages" className="nav-link text-white navbar-link"  activeClassName="active">
                   Packages
@@ -110,7 +107,48 @@ export default function NavBar() {
                   Contact
                 </NavLink>
               </li>
-              {/* <li className="nav-item dropdown ">
+              <li className="nav-item dropdown  me-5 position-relative">
+                  <Link
+                    className="nav-link dropdown-toggle text-white"
+                    id="calcDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  Calculates
+                  </Link>
+                  <ul
+                    className="dropdown-menu  text-center w-auto position-absolute  bg-dark text-white " // Add "w-auto" for automatic width
+                    aria-labelledby="calcDropdown"
+                    style={{ minWidth: "80px" }} // Ensure the width fits content
+                  >
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      Daily Calories Calculator
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                       Calories Burned By Heart Rate
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      Calories Burned By Heart Activities
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                    BMI Body Mass Calculator
+                      </Link>
+                    </li>
+                  
+                  </ul>
+                </li>
+                <li className="nav-item dropdown ">
                   <Link
                     className="nav-link dropdown-toggle text-white"
                     id="languageDropdown"
@@ -122,13 +160,13 @@ export default function NavBar() {
                     {i18n.language === "ar" ? "AR" : "EN"}
                   </Link>
                   <ul
-                    className="dropdown-menu dropdown-menu-end text-center w-auto" // Add "w-auto" for automatic width
+                    className="dropdown-menu dropdown-menu-end text-center w-auto position-absolute bg-dark text-white" // Add "w-auto" for automatic width
                     aria-labelledby="languageDropdown"
                     style={{ minWidth: "80px" }} // Ensure the width fits content
                   >
                     <li>
                       <span
-                        className="dropdown-item "
+                        className="dropdown-item text-white"
                         onClick={() => handleLanguageChange("en")}
                             type="button"
                       >
@@ -138,7 +176,7 @@ export default function NavBar() {
                     <hr />
                     <li>
                       <span
-                        className="dropdown-item"
+                        className="dropdown-item text-white"
                         onClick={() => handleLanguageChange("ar")}
                         type="button"
                       >
@@ -146,7 +184,7 @@ export default function NavBar() {
                       </span>
                     </li>
                   </ul>
-                </li> */}
+                </li>
             </ul>
 
             {/* Toggler visible alongside links on all screens */}
@@ -171,10 +209,11 @@ export default function NavBar() {
             tabIndex={-1}
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
+
           >
             <div className="offcanvas-header">
             <div className="image">
-                <img src={logo} alt="logo"  className="img-fluid" width={130}/>
+                <img src={logo} alt="logo"  className="img-fluid" width={80}/>
             </ div >
               <i className="fa-solid fa-x ms-auto me-4 text-white " type="button" data-bs-dismiss="offcanvas"
                 aria-label="Close"></i>
@@ -195,13 +234,91 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <NavLink to="/services" className="nav-link navbar-link text-white" activeClassName="active">
-                    Services
+                    Packages
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/contact-us" className="nav-link navbar-link text-white" activeClassName="active">
                     Contact-us
                   </NavLink>
+                </li>
+                <li className="nav-item dropdown  ">
+                  <Link
+                    className="nav-link dropdown-toggle text-white"
+                    id="calcDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  Calculates
+                  </Link>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end  text-center w-auto  bg-dark text-white " // Add "w-auto" for automatic width
+                    aria-labelledby="calcDropdown"
+                    style={{ minWidth: "80px" }} // Ensure the width fits content
+                  >
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      Daily Calories Calculator
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                       Calories Burned By Heart Rate
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      Calories Burned By Heart Activities
+                      </Link>
+                    </li>
+                    <hr />
+                    <li>
+                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                    BMI Body Mass Calculator
+                      </Link>
+                    </li>
+                  
+                  </ul>
+                </li>
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle text-white"
+                    id="languageDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i className="fa-solid fa-globe me-2"></i>
+                    {i18n.language === "ar" ? "AR" : "EN"}
+                  </Link>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end text-center w-auto  bg-dark text-white" // Add "w-auto" for automatic width
+                    aria-labelledby="languageDropdown"
+                    style={{ minWidth: "80px" }} // Ensure the width fits content
+                  >
+                    <li>
+                      <span
+                        className="dropdown-item text-white"
+                        onClick={() => handleLanguageChange("en")}
+                            type="button"
+                      >
+                        En
+                      </span>
+                    </li>
+                    <hr />
+                    <li>
+                      <span
+                        className="dropdown-item text-white"
+                        onClick={() => handleLanguageChange("ar")}
+                        type="button"
+                      >
+                        Ar
+                      </span>
+                    </li>
+                  </ul>
                 </li>
               </ul>
 

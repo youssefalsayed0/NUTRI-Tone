@@ -7,6 +7,8 @@ import './keyframes.css'
 import 'mouse-follower/src/scss/index.scss';  // Import the MouseFollower styles
 import './index.css'
 import './media.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './i18n.js';
 import 'bootstrap/dist/js/bootstrap.bundle.js'; 
 

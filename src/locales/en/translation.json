@@ -43,7 +43,7 @@
     "obesity": {
       "title": "OBESITY & underweight",
       "desc": {
-        "description" : "",
+        "description": "",
         "title": "The Role and Importance of Nutrition in Cases of Obesity and Underweight",
         "ben1": {
           "title": "Obesity",
@@ -97,7 +97,7 @@
     "clinical": {
       "title": "clinical nutrition",
       "desc": {
-        "description" : "Clinical nutrition plays a vital role in the management of many health conditions, including diabetes and hypertension Blood problems, kidney and liver, heart disease, digestive system and thyroid. Here's a look at her role every case",
+        "description": "Clinical nutrition plays a vital role in the management of many health conditions, including diabetes and hypertension Blood problems, kidney and liver, heart disease, digestive system and thyroid. Here's a look at her role every case",
         "title": "The Role and Importance of Therapeutic Nutrition in Managing Health Conditions",
         "ben1": {
           "title": "Diabetes",
@@ -154,7 +154,7 @@
       "title": "kids nutrition",
       "desc": {
         "title": "The Importance and Role of Nutrition for Children",
-        "description" :"Proper nutrition for children is an essential element for their healthy growth and development. Some key points about the importance and role of nutrition for children",
+        "description": "Proper nutrition for children is an essential element for their healthy growth and development. Some key points about the importance and role of nutrition for children",
         "ben1": {
           "title": "Growth and Development",
           "desc": "Proper nutrition for children is essential for their healthy growth and development. Good nutrition provides the necessary nutrients for the growth of bones, muscles, and organs."
@@ -204,7 +204,7 @@
     "pregnant": {
       "title": "pregnant & lactation nutrition",
       "desc": {
-        "description" : "Proper nutrition during pregnancy and breastfeeding is an essential factor in ensuring the health of the mother and child. Some important points about the role of nutrition in these periods",
+        "description": "Proper nutrition during pregnancy and breastfeeding is an essential factor in ensuring the health of the mother and child. Some important points about the role of nutrition in these periods",
         "title": "The Importance and Role of Nutrition for Pregnant and Nursing Women",
         "ben1": {
           "title": "Supporting Fetal Growth",
@@ -261,52 +261,51 @@
 
     "sports": {
       "title": "sports nutrition",
-  
-"desc": {
-  "title": "The Role and Importance of Nutrition for Athletes",
-  "description" : "In improving sports performance and enhancing public health. Essentially Nutrition is an element Some key points about the role and importance of nutrition for athletes",
-  "ben1": {
-    "title": "Improving Performance",
-    "desc": "Athletes need sufficient calories to support their physical activity and enhance performance."
-  },
-  "ben2": {
-    "title": "Increasing Endurance",
-    "desc": "Good nutrition helps enhance endurance and high performance during workouts."
-  },
-  "ben3": {
-    "title": "Rapid Recovery",
-    "desc": "Proteins play an important role in repairing muscle tissues after exercise."
-  },
-  "ben4": {
-    "title": "Energy Replenishment",
-    "desc": "Consuming carbohydrates post-exercise helps replenish glycogen stores in the muscles."
-  },
-  "ben5": {
-    "title": "Injury Prevention",
-    "desc": "Getting calcium and vitamin D enhances bone health and reduces the risk of fractures."
-  },
-  "ben6": {
-    "title": "Supporting Immune Function",
-    "desc": "Balanced nutrition supports the immune system, reducing the chances of illness."
-  },
-  "ben7": {
-    "title": "Achieving Physical Goals",
-    "desc": "Consuming adequate protein helps in building muscle mass."
-  },
-  "ben8": {
-    "title": "Fat Loss",
-    "desc": "Following a balanced diet can help athletes achieve their weight loss goals."
-  },
-  "ben9": {
-    "title": "General Health",
-    "desc": "Good nutrition positively affects mental health, aiding in improved focus and motivation."
-  },
-  "ben10": {
-    "title": "Reducing Disease Risks",
-    "desc": "Eating healthy foods contributes to the prevention of chronic diseases such as diabetes and heart disease."
-  }
-}
-,
+
+      "desc": {
+        "title": "The Role and Importance of Nutrition for Athletes",
+        "description": "In improving sports performance and enhancing public health. Essentially Nutrition is an element Some key points about the role and importance of nutrition for athletes",
+        "ben1": {
+          "title": "Improving Performance",
+          "desc": "Athletes need sufficient calories to support their physical activity and enhance performance."
+        },
+        "ben2": {
+          "title": "Increasing Endurance",
+          "desc": "Good nutrition helps enhance endurance and high performance during workouts."
+        },
+        "ben3": {
+          "title": "Rapid Recovery",
+          "desc": "Proteins play an important role in repairing muscle tissues after exercise."
+        },
+        "ben4": {
+          "title": "Energy Replenishment",
+          "desc": "Consuming carbohydrates post-exercise helps replenish glycogen stores in the muscles."
+        },
+        "ben5": {
+          "title": "Injury Prevention",
+          "desc": "Getting calcium and vitamin D enhances bone health and reduces the risk of fractures."
+        },
+        "ben6": {
+          "title": "Supporting Immune Function",
+          "desc": "Balanced nutrition supports the immune system, reducing the chances of illness."
+        },
+        "ben7": {
+          "title": "Achieving Physical Goals",
+          "desc": "Consuming adequate protein helps in building muscle mass."
+        },
+        "ben8": {
+          "title": "Fat Loss",
+          "desc": "Following a balanced diet can help athletes achieve their weight loss goals."
+        },
+        "ben9": {
+          "title": "General Health",
+          "desc": "Good nutrition positively affects mental health, aiding in improved focus and motivation."
+        },
+        "ben10": {
+          "title": "Reducing Disease Risks",
+          "desc": "Eating healthy foods contributes to the prevention of chronic diseases such as diabetes and heart disease."
+        }
+      },
       "price": "599 EGP/",
       "offer1": "Special offer 3 months 1500 instead of 1800",
       "offer2": "Special offer 6 months 3000 instead of 3600",
@@ -322,7 +321,7 @@
     "family": {
       "title": "family care",
       "desc": {
-        "description" : "The “Family Care” program from Nutritone is an initiative aimed at promoting health and proper nutrition within the family. Some points that explain its importance and role",
+        "description": "The “Family Care” program from Nutritone is an initiative aimed at promoting health and proper nutrition within the family. Some points that explain its importance and role",
         "title": "The Importance and Role of Nutrition in the \"Family Care\" Program by NutriTone",
         "ben1": {
           "title": "Enhancing Nutritional Awareness",
@@ -508,9 +507,32 @@
     "name": "Name",
     "phone": "Phone",
     "email": "Email",
-    "subject" :"subject",
+    "subject": "subject",
     "message": "Tell Us About Your Needs *",
     "button": "Send Message",
-    "heading" : "feel free to ask us anything"
+    "heading": "feel free to ask us anything",
+    "bmi-title": "Calculate Your BMI",
+    "bmi-heading": "Welcome to the BMI Calculator",
+    "calc-btn": "Calculate",
+    "height_label": "Height (cm)",
+    "weight_label": "Weight (kg)",
+    "age_label": "Age",
+    "gender_label": "Gender",
+    "activity_label": "Activity Factor",
+    "goal_label": "Goal",
+    "gender": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "activity": {
+      "sedentary": "Sedentary",
+      "light": "Lightly Active",
+      "moderate": "Moderately Active",
+      "active": "Active"
+    },
+    "goal": {
+      "weight_loss": "Weight Loss",
+      "weight_gain": "Weight Gain"
+    }
   }
 }
