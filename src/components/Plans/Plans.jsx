@@ -25,6 +25,7 @@ export default function Plans() {
       ],
       image: obesity,
       path: "/Packages/package-details/obesity&underweight",
+      get : "https://forms.gle/goVQhCDw49n6vxvy5",
     },
     {
       key: "obesity.silver",
@@ -38,6 +39,7 @@ export default function Plans() {
       ],
       image: obesity,
       path: "/Packages/package-details/obesity&underweight",
+      get : "https://forms.gle/goVQhCDw49n6vxvy5",
     },
     {
       key: "clinical",
@@ -56,6 +58,7 @@ export default function Plans() {
       ],
       image: clinical,
       path: "/Packages/package-details/clinical-nutrition",
+      get: "https://forms.gle/P9M9GbYidMkhMSqd6",
     },
     {
       key: "kids",
@@ -72,6 +75,7 @@ export default function Plans() {
       ],
       image: kids,
       path: "/Packages/package-details/kids-nutrition",
+      get: "https://forms.gle/VP67PKWfzZGLSoHVA",
     },
     {
       key: "pregnant",
@@ -87,6 +91,7 @@ export default function Plans() {
       ],
       image: pregnant,
       path: "/Packages/package-details/pregnant&lactation-nutrition",
+      get: "https://forms.gle/MLeQLEQL77TeRBgH8",
     },
     {
       key: "sports",
@@ -103,6 +108,7 @@ export default function Plans() {
       ],
       image: sports,
       path: "/Packages/package-details/sports-nutrition",
+      get :"https://forms.gle/XDqrazCu1pGD4mSAA",
     },
     {
       key: "family",
@@ -171,10 +177,10 @@ export default function Plans() {
                   </div>
                   <div className="buttons text-center mt-auto"> {/* Add mt-auto to push buttons to the bottom */}
                     <Link
-
                       type="button"
-                      to="/contact"
+                       to={pkg.get}
                       className="main-btn rounded-0 text-uppercase position-relative mt-5"
+                      target="_balnk"
                     >
                       {t("plans.button1")}
                     </Link>

@@ -20,6 +20,7 @@ import KidsPack from "./components/KidsPack/KidsPack";
 import PregnantPack from "./components/PregnantPack/PregnantPack";
 import ClinicalPack from "./components/ClinicalPack/ClinicalPack";
 import Bmi from "./components/Bmi/Bmi";
+import Offers from "./components/Offers/Offers";
 
 
 
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "home", element: <Home /> },
       { path: "about-us", element: <AboutUs /> },
       { path: "contact-us", element: <ContactUs /> },
+      { path: "offers", element: <Offers/> },
       { path: "terms-&-conditions", element: <Terms /> },
       { path: "refund-&-policy", element: <Refund /> },
       { path: "privacy-policy", element: <Privacy /> },

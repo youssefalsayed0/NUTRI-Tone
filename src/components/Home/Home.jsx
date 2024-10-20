@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Splash />
+        {/* <Splash /> */}
         <LandingSection />    
         <PlansSlider/>
         <AboutUsSection />

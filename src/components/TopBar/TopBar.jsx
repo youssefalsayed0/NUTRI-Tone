@@ -1,7 +1,7 @@
 export default function TopBar() {
   return (
     <>
-      <section className=" top-bar bg-black py-2 px-md-5 px-0  ">
+      <section className=" top-bar bg-black py-2 px-md-5 px-0 " >
         <div className="container-fluid">
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
@@ -9,19 +9,18 @@ export default function TopBar() {
                 <div className="d-flex align-items-center">
                   <i className="fa-regular fa-envelope me-2 "></i>
                   <a
-                    href="mailto:official.nutritone@gmail.com"
+                    href="mailto:nutritone.official@gmail.com"
                     className="me-5 pe-5 border-1 border-end"
                   >
-                   official.nutritone@gmail.com
+                  nutritone.official@gmail.com
                   </a>
                 </div>
 
                 <div className="d-flex align-items-center">
                   <i className="fa-solid fa-phone  me-2 "></i>
                   <a
-                    href="tel:+2001069796878"
-                    className="me-5 pe-5 border-1 border-end"
-                  >
+                    href="tel:+201069796878"
+                    className="me-5 pe-5 border-1 border-end" >
                     01069796878
                   </a>
                 </div>

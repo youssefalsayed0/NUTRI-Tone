@@ -10,6 +10,26 @@
     },
     "footer": "LIFE EASY"
   },
+
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "packages": "Packages",
+    "contact": "Contact us",
+    "offers": "offers",
+    "calculates": "Calculates",
+    "dailyCalories": "Daily Calories Calculator",
+    "caloriesHeartRate": "Calories Burned By Heart Rate",
+    "caloriesActivities": "Calories Burned By Heart Activities",
+    "bmiCalculator": "BMI Body Mass Calculator",
+    "desc" : "We are a system specialized in nutrition in its various sections, including obesity, thinness, therapeutic nutrition, nutrition for pregnant and lactating women, children's nutrition, and nutrition for athletes, in addition to our important role in physical therapy.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "soon" : "soon",
+    "stayConnected": "Stay Connected"
+  },
+  
   "banner": {
     "home": "home",
     "about": "about-us",
@@ -39,7 +59,6 @@
   "plans": {
     "button1": "GET Package",
     "button2": "KNOW MORE",
-
     "obesity": {
       "title": "OBESITY & underweight",
       "desc": {
@@ -437,6 +456,7 @@
       "desc": "For any questions or concerns regarding these terms and conditions, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
     }
   },
+
   "refundPolicy": {
     "policy1": {
       "title": "Introduction",
@@ -463,6 +483,7 @@
       "desc": "For any questions or concerns regarding this refund policy, please contact us at: Email: nutritone.official@gmail.com Phone: 01069796878"
     }
   },
+
   "privacyPolicy": {
     "section1": {
       "title": "Introduction",
@@ -511,8 +532,11 @@
     "message": "Tell Us About Your Needs *",
     "button": "Send Message",
     "heading": "feel free to ask us anything",
+
     "bmi-title": "Calculate Your BMI",
     "bmi-heading": "Welcome to the BMI Calculator",
+
+    
     "calc-btn": "Calculate",
     "height_label": "Height (cm)",
     "weight_label": "Weight (kg)",
@@ -534,5 +558,9 @@
       "weight_loss": "Weight Loss",
       "weight_gain": "Weight Gain"
     }
+
+
+
   }
+
 }

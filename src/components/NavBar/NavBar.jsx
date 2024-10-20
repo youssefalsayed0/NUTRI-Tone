@@ -6,25 +6,19 @@ import { useEffect, useRef } from "react";
 export default function NavBar() {
   const navbarRef = useRef(null);
   const offcanvasRef = useRef(null); // Reference for offcanvas
-  
-
-
- 
   const location = useLocation();
-  const {  i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Handle opening/closing of off-canvas
   const closeOffcanvas = () => {
     offcanvasRef.current.classList.remove("show");
   };
 
-
   useEffect(() => {
     const navLinks = offcanvasRef.current.querySelectorAll(".navbar-link");
-    const offbackdrop = document.getElementsByClassName('offcanvas-backdrop');
+  
     const handleNavLinkClick = () => {
-      closeOffcanvas();
-      offbackdrop.current.classList.remove("show");   
+      closeOffcanvas(); 
     };
 
     navLinks.forEach((link) =>
@@ -89,22 +83,22 @@ export default function NavBar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-xl-flex flex-row nav-1 d-none text-uppercase ">
               <li className="nav-item me-5">
                 <NavLink to="/" className="nav-link  text-white navbar-link" activeClassName="active"  >
-                  Home
+                {t("nav.home")}
                 </NavLink>
               </li>
               <li className="nav-item  me-5 ">
                 <NavLink to="/about-us" className="nav-link text-white navbar-link"  activeClassName="active">
-                  About Us
+                {t("nav.about")}
                 </NavLink>
               </li>
               <li className="nav-item me-5 ">
                 <NavLink to="/Packages" className="nav-link text-white navbar-link"  activeClassName="active">
-                  Packages
+                {t("nav.packages")}
                 </NavLink>
               </li>
-              <li className="nav-item  me-5 ">
-                <NavLink to="/contact-us" className="nav-link text-white navbar-link"  activeClassName="active">
-                  Contact
+              <li className="nav-item me-5 ">
+                <NavLink to="/offers" className="nav-link text-white navbar-link"  activeClassName="active">
+                {t("nav.offers")}
                 </NavLink>
               </li>
               <li className="nav-item dropdown  me-5 position-relative">
@@ -115,7 +109,7 @@ export default function NavBar() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                  Calculates
+                   {t("nav.calculates")}
                   </Link>
                   <ul
                     className="dropdown-menu  text-center w-auto position-absolute  bg-dark text-white " // Add "w-auto" for automatic width
@@ -124,30 +118,35 @@ export default function NavBar() {
                   >
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                      Daily Calories Calculator
+                      {t("nav.dailyCalories")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                       Calories Burned By Heart Rate
+                      {t("nav.caloriesHeartRate")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                      Calories Burned By Heart Activities
+                      {t("nav.caloriesActivities")}    
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                    BMI Body Mass Calculator
+                      {t("nav.bmiCalculator")}  
                       </Link>
                     </li>
                   
                   </ul>
                 </li>
+              <li className="nav-item  me-5 ">
+                <NavLink to="/contact-us" className="nav-link text-white navbar-link"  activeClassName="active">
+                {t("nav.contact")}
+                </NavLink>
+              </li>
                 <li className="nav-item dropdown ">
                   <Link
                     className="nav-link dropdown-toggle text-white"
@@ -224,25 +223,25 @@ export default function NavBar() {
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 d-xl-none h-100 d-flex align-items-center justify-content-center">
                 <li className="nav-item">
                   <NavLink to="/home" className="nav-link  navbar-link text-white"  activeClassName="active">
-                    Home
+                {t("nav.home")}
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/about-us" className="nav-link navbar-link text-white" activeClassName="active">
-                    About Us
+                  {t("nav.about")}
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/services" className="nav-link navbar-link text-white" activeClassName="active">
-                    Packages
+                  {t("nav.packages")}
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/contact-us" className="nav-link navbar-link text-white" activeClassName="active">
-                    Contact-us
+                  <NavLink to="/offers" className="nav-link navbar-link text-white" activeClassName="active">
+                    {t("nav.offers")}
                   </NavLink>
                 </li>
-                <li className="nav-item dropdown  ">
+                <li className="nav-item dropdown   position-relative">
                   <Link
                     className="nav-link dropdown-toggle text-white"
                     id="calcDropdown"
@@ -250,38 +249,43 @@ export default function NavBar() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                  Calculates
+                   {t("nav.calculates")}
                   </Link>
                   <ul
-                    className="dropdown-menu dropdown-menu-end  text-center w-auto  bg-dark text-white " // Add "w-auto" for automatic width
+                    className="dropdown-menu  text-center w-auto   bg-dark text-white " // Add "w-auto" for automatic width
                     aria-labelledby="calcDropdown"
                     style={{ minWidth: "80px" }} // Ensure the width fits content
                   >
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                      Daily Calories Calculator
+                      {t("nav.dailyCalories")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                       Calories Burned By Heart Rate
+                      {t("nav.caloriesHeartRate")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                      Calories Burned By Heart Activities
+                      {t("nav.caloriesActivities")}    
                       </Link>
                     </li>
                     <hr />
                     <li>
                       <Link className="dropdown-item fw-semibold p-3 text-white">
-                    BMI Body Mass Calculator
+                      {t("nav.bmiCalculator")}  
                       </Link>
                     </li>
                   
                   </ul>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/contact-us" className="nav-link navbar-link text-white" activeClassName="active">
+                  {t("nav.contact")}
+                  </NavLink>
                 </li>
                 <li className="nav-item dropdown ">
                   <Link
@@ -323,17 +327,17 @@ export default function NavBar() {
               </ul>
 
               <div className="d-none d-xl-block text-white">
-            <p className="text-white-50 mt-4">We’re a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX.</p>
+            <p className="text-white-50 mt-4">{t("nav.desc")}</p>
             <div className=" mt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
-              <h6 className="text-uppercase">contact us</h6>
+              <h6 className="text-uppercase">{t("nav.contact")}</h6>
        <div className=" mt-5">
                <a href="tel:+201069796878"  className="d-flex  link">
                <span className="icon">
                    <i className="fa-solid fa-phone fa-lg"></i> 
                </span>
                <div className="box">
-                 <p className="title">phone</p>
+                 <p className="title">  {t("nav.phone")}</p>
                  <p className="data">01069796878</p>
                </div>
                </a>
@@ -343,7 +347,7 @@ export default function NavBar() {
                    <i className="fa-regular fa-envelope fa-lg"></i> 
                </span>
                <div className="box">
-                 <p className="title">email</p>
+                 <p className="title">  {t("nav.email")}</p>
                  <p className="data">official.nutritone@gmail.com</p>
                </div>
                </a>
@@ -353,15 +357,15 @@ export default function NavBar() {
                    <i className="fa-solid fa-location-dot fa-lg"></i> 
                </span>
                <div className="box">
-                 <p className="title">address</p>
-                 <p className="data">Soon</p>
+                 <p className="title">  {t("nav.address")}</p>
+                 <p className="data">  {t("nav.soon")}</p>
                </div>
                </a>
        </div>
             </div>
             <div className="mt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10" viewBox="0 0 35 10" fill="none"><path d="M15.1107 0H10.1259L0.954102 9.06122H5.93894L15.1107 0Z" fill="#eefb13"></path><path d="M24.7416 0H19.7567L10.585 9.06122H15.5698L24.7416 0Z" fill="#eefb13"></path><path d="M34.3724 0H29.3833L20.2158 9.06122H25.1964L34.3724 0Z" fill="#eefb13"></path></svg>
-              <h6 className="text-uppercase">stay connected</h6>
+              <h6 className="text-uppercase">  {t("nav.stayConnected")}</h6>
               <div className=" d-flex text-white-50 mt-4 ms-3 ">
               <div className="social-icons d-flex   align-items-center">
                 <a href="https://www.facebook.com/NUTRITONE1/ " target="_blank">

@@ -113,7 +113,7 @@ span {
       /* Dark again at the top */
   );
 }
-
+.offcanvas-backdrop{display: none;}
 .top-bar a {
   font-size: 14px;
   line-height: 24px;
@@ -124,7 +124,7 @@ nav {
   border-color: #ffffff33;
   z-index: 10 !important;
   margin-top: 40px;
-  transition: var(--main-transition);
+ 
 }
 nav .nav-link {
   position: relative;
@@ -132,7 +132,7 @@ nav .nav-link {
   transition: var(--main-transition);
 }
 nav.nav-style {
-  animation: slide-down var(--main-transition);
+  animation: slide-down 0.5s ease-in-out;
   margin-top: 0px;
 }
 .navbar .nav-link:hover{
@@ -731,7 +731,6 @@ padding: 10px;
   padding: 600pxpx;
 }
 
-.bmi{}
 
 
 .call .container .row{
