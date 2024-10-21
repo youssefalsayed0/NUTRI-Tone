@@ -3,49 +3,44 @@ import { useState } from "react";
 import Banner from "../Banner/Banner";
 import CallToAction from "../CallToAction/CallToAction";
 
-const Bmi = () => {
+const Bmr = () => {
   const { t } = useTranslation();
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('male');
-  const [bmiResult, setBmiResult] = useState(null);
-  const [bmiCategory, setBmiCategory] = useState('');
+  const [bmrResult, setBmrResult] = useState(null);
   const [unitSystem, setUnitSystem] = useState('metric'); // 'metric' or 'us'
 
-  const calculateBMI = (e) => {
+  const calculateBMR = (e) => {
     e.preventDefault();
     
-    let heightInMeters, weightInKg;
+    let weightInKg = weight;
+    let heightInCm = height;
 
-    // Convert height and weight based on unit system
-    if (unitSystem === 'metric') {
-      heightInMeters = height / 100; // height in cm to m
-      weightInKg = weight; // weight in kg
-    } else {
-      heightInMeters = height * 0.0254; // height in inches to m
-      weightInKg = weight * 0.453592; // weight in lbs to kg
+    // Convert weight and height based on unit system
+    if (unitSystem === 'us') {
+      weightInKg = weight * 0.453592; // lbs to kg
+      heightInCm = height * 2.54; // inches to cm
     }
 
-    const bmi = weightInKg / (heightInMeters ** 2);
-    setBmiResult(bmi.toFixed(2));
+    let bmr;
 
-    // Determine BMI category
-    if (bmi < 16) setBmiCategory(t("bmiCategories.severe_thinness"));
-    else if (bmi >= 16 && bmi < 17) setBmiCategory(t("bmiCategories.moderate_thinness"));
-    else if (bmi >= 17 && bmi < 18.5) setBmiCategory(t("bmiCategories.mild_thinness"));
-    else if (bmi >= 18.5 && bmi < 25) setBmiCategory(t("bmiCategories.normal"));
-    else if (bmi >= 25 && bmi < 30) setBmiCategory(t("bmiCategories.overweight"));
-    else if (bmi >= 30 && bmi < 35) setBmiCategory(t("bmiCategories.obese_class_1"));
-    else if (bmi >= 35 && bmi < 40) setBmiCategory(t("bmiCategories.obese_class_2"));
-    else setBmiCategory(t("bmiCategories.obese_class_3"));
+    // Mifflin-St Jeor Equation
+    if (gender === 'male') {
+      bmr = 10 * weightInKg + 6.25 * heightInCm - 5 * age + 5;
+    } else {
+      bmr = 10 * weightInKg + 6.25 * heightInCm - 5 * age - 161;
+    }
+
+    setBmrResult(bmr.toFixed(2));
   };
 
   return (
     <>
       <main>
-        <Banner title={"BMI"} />
-        <section className="contact bmi">
+        <Banner title={"BMR Calculator"} />
+        <section className="contact bmr">
           <div className="container">
             <div className="contact-items">
               <div className="row gy-5 align-items-center">
@@ -66,7 +61,7 @@ const Bmi = () => {
                         US Units
                       </button>
                     </div>
-                    <form className="contact-form" onSubmit={calculateBMI}>
+                    <form className="contact-form" onSubmit={calculateBMR}>
                       <div className="row mb-3 gy-3">
                         {/* Height Input */}
                         <div className="col-lg-6">
@@ -134,17 +129,16 @@ const Bmi = () => {
                             id="submit"
                             className="main-btn text-white"
                           >
-                            {t("contact.calc-btn")} <i className="fa-solid fa-equals ms-1" />
+                            Calculate BMR <i className="fa-solid fa-equals ms-1" />
                           </button>
                         </div>
                       </div>
                     </form>
 
-                    {/* BMI Result Display */}
-                    {bmiResult && (
+                    {/* BMR Result Display */}
+                    {bmrResult && (
                       <div className="result mt-4">
-                        <p>{t("bmiCategories.label")}: {bmiCategory}</p>
-                        <h4>BMI: {bmiResult}</h4>
+                        <h4>BMR: {bmrResult} Kcal/day</h4>
                       </div>
                     )}
                   </div>
@@ -162,4 +156,4 @@ const Bmi = () => {
   );
 };
 
-export default Bmi;
+export default Bmr;

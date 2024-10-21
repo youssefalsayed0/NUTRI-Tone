@@ -1,3 +1,4 @@
+import AboutUsSection from "../AboutUsSection/AboutUsSection";
 
 
 export default function AboutUs() {
@@ -5,7 +6,7 @@ export default function AboutUs() {
     <>
       <main>
 
-
+     <AboutUsSection/>
       </main>
     </>
   );

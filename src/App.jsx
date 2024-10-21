@@ -21,6 +21,7 @@ import PregnantPack from "./components/PregnantPack/PregnantPack";
 import ClinicalPack from "./components/ClinicalPack/ClinicalPack";
 import Bmi from "./components/Bmi/Bmi";
 import Offers from "./components/Offers/Offers";
+import Bmr from "./components/Bmr/Bmr";
 
 
 
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       { path: "refund-&-policy", element: <Refund /> },
       { path: "privacy-policy", element: <Privacy /> },
       { path: "bmi", element: <Bmi /> },
+      { path: "bmr", element: <Bmr /> },
       {
         path: "packages",
         element: <Packages />,

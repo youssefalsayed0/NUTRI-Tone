@@ -22,6 +22,7 @@
     "caloriesHeartRate": "Calories Burned By Heart Rate",
     "caloriesActivities": "Calories Burned By Heart Activities",
     "bmiCalculator": "BMI Body Mass Calculator",
+    "bmr": "BMR  Basal Metabolic Calculator",
     "desc" : "We are a system specialized in nutrition in its various sections, including obesity, thinness, therapeutic nutrition, nutrition for pregnant and lactating women, children's nutrition, and nutrition for athletes, in addition to our important role in physical therapy.",
     "phone": "Phone",
     "email": "Email",
@@ -537,17 +538,22 @@
     "bmi-heading": "Welcome to the BMI Calculator",
 
     
-    "calc-btn": "Calculate",
-    "height_label": "Height (cm)",
-    "weight_label": "Weight (kg)",
+    "height_label_metric": "Height (cm)",
+    "height_label_us": "Height (inches)",
+    "weight_label_metric": "Weight (kg)",
+    "weight_label_us": "Weight (lbs)",
     "age_label": "Age",
     "gender_label": "Gender",
-    "activity_label": "Activity Factor",
-    "goal_label": "Goal",
     "gender": {
       "male": "Male",
       "female": "Female"
     },
+    "calc-btn": "Calculate",
+    "units": {
+      "metric": "Metric Units",
+      "us": "US Units"
+    },
+    
     "activity": {
       "sedentary": "Sedentary",
       "light": "Lightly Active",
@@ -559,8 +565,26 @@
       "weight_gain": "Weight Gain"
     }
 
-
-
+    
+  },
+  "bmiCategories": {
+    "title": "BMI Categories",
+    "label": "BMI Category",
+    "severe_thinness": "Severe Thinness",
+    "moderate_thinness": "Moderate Thinness",
+    "mild_thinness": "Mild Thinness",
+    "normal": "Normal",
+    "overweight": "Overweight",
+    "obese_class_1": "Obese Class I",
+    "obese_class_2": "Obese Class II",
+    "obese_class_3": "Obese Class III",
+    "range_severe_thinness": "< 16",
+    "range_moderate_thinness": "16 - 17",
+    "range_mild_thinness": "17 - 18.5",
+    "range_normal": "18.5 - 25",
+    "range_overweight": "25 - 30",
+    "range_obese_class_1": "30 - 35",
+    "range_obese_class_2": "35 - 40",
+    "range_obese_class_3": "> 40"
   }
-
 }

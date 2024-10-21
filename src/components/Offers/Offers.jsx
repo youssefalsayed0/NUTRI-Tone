@@ -1,10 +1,14 @@
-import React from 'react'
+
 import ExclusiveOffers from '../ExclusiveOffers/ExclusiveOffers'
+import GetOffers from '../GetOffers/GetOffers'
 
 export default function Offers() {
   return (
    <>
-   <ExclusiveOffers/>
+<main>
+     <ExclusiveOffers/> 
+     <GetOffers/> 
+</main>
    </>
   )
 }

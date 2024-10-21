@@ -13,6 +13,10 @@ export default function NavBar() {
   const closeOffcanvas = () => {
     offcanvasRef.current.classList.remove("show");
   };
+  const openOffcanvas = () => {
+    offcanvasRef.current.classList.add("show","fade");
+
+  };
 
   useEffect(() => {
     const navLinks = offcanvasRef.current.querySelectorAll(".navbar-link");
@@ -117,25 +121,19 @@ export default function NavBar() {
                     style={{ minWidth: "80px" }} // Ensure the width fits content
                   >
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to='/calories'>
                       {t("nav.dailyCalories")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
-                      {t("nav.caloriesHeartRate")}  
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to='/bmr'>
+                      {t("nav.bmr")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
-                      {t("nav.caloriesActivities")}    
-                      </Link>
-                    </li>
-                    <hr />
-                    <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to='/bmi'>
                       {t("nav.bmiCalculator")}  
                       </Link>
                     </li>
@@ -190,10 +188,8 @@ export default function NavBar() {
             <div
               className=" menu__icon"
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
+              onClick={() => openOffcanvas()}
+           
             >
                 <span />
                 <span />
@@ -208,21 +204,21 @@ export default function NavBar() {
             tabIndex={-1}
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
-
+data-bs-backdrop="false"
           >
             <div className="offcanvas-header">
             <div className="image">
                 <img src={logo} alt="logo"  className="img-fluid" width={80}/>
             </ div >
-              <i className="fa-solid fa-x ms-auto me-4 text-white " type="button" data-bs-dismiss="offcanvas"
-                aria-label="Close"></i>
+              <i className="fa-solid fa-x ms-auto me-4 text-white " type="button"   onClick={() => closeOffcanvas()}
+              ></i>
             
             </div>
             <div className="offcanvas-body px-4">
               
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 d-xl-none h-100 d-flex align-items-center justify-content-center">
                 <li className="nav-item">
-                  <NavLink to="/home" className="nav-link  navbar-link text-white"  activeClassName="active">
+                  <NavLink to="/home" className="nav-link  navbar-link text-white"  activeClassName="active" >
                 {t("nav.home")}
                   </NavLink>
                 </li>
@@ -257,25 +253,18 @@ export default function NavBar() {
                     style={{ minWidth: "80px" }} // Ensure the width fits content
                   >
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to='/calories'>
                       {t("nav.dailyCalories")}  
                       </Link>
                     </li>
-                    <hr />
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
-                      {t("nav.caloriesHeartRate")}  
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to='/bmr'>
+                      {t("nav.bmr")}  
                       </Link>
                     </li>
                     <hr />
                     <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
-                      {t("nav.caloriesActivities")}    
-                      </Link>
-                    </li>
-                    <hr />
-                    <li>
-                      <Link className="dropdown-item fw-semibold p-3 text-white">
+                      <Link className="dropdown-item fw-semibold p-3 text-white" to="/bmi">
                       {t("nav.bmiCalculator")}  
                       </Link>
                     </li>
